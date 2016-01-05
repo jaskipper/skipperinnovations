@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8640a3cb73cd995c3f9ce71929750440",
-    "content-hash": "5e152e99ce4766edebc88bce84e6f0c4",
+    "hash": "a8875940ba3683a9f810ba4e2c9f91b8",
+    "content-hash": "f7c64aa190291be0364e9c1bc73f3313",
     "packages": [
         {
             "name": "composer/installers",
@@ -231,17 +231,6 @@
                 "wordpress"
             ],
             "time": "2015-12-24 19:42:34"
-        },
-        {
-            "name": "skipperinnovations/advanced-custom-fields-pro",
-            "version": "5.3.2.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://skipperinnovations.com/files/si-plugins/advanced-custom-fields-pro/advanced-custom-fields-pro-5.3.2.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "wordpress-plugin"
         },
         {
             "name": "vlucas/phpdotenv",
