@@ -1,0 +1,104 @@
+body.admin-bar {
+  .navbar-inverse {
+    top: 28px;
+  }
+  @media screen and (max-width: 782px) {
+    .navbar-inverse {
+      top: 46px;
+    }
+  }
+}
+.navbar-header {
+  #skippertoggle {
+    color: $gray-light3;
+    font-weight: 700;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 6px;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+  }
+  #skipperbrand {
+    color: $gray-light3;
+    font-size: 16px;
+    float: left;
+    margin: 0 0 0 15px;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    a:hover {
+      text-decoration: none;
+    }
+    @media screen and (max-width: 667px) {
+      display: none;
+    }
+    @media screen and (max-width: 375px) {
+      margin-left: 10px;
+    }
+  }
+  .navbar-toggle {
+    @media screen and (max-width: 320px) {
+      margin-right: 10px;
+    }
+  }
+}
+/* =Social Menu
+-------------------------------------------------------------- */
+
+#menu-social-items {
+  position:relative;
+  float:right;
+  margin-bottom:0;
+  @media screen and (max-width: 767px) {
+    float: left;
+    li {
+      display: inline-block;
+    }
+  }
+  li {
+    a {
+      color:#979696;
+      padding:9px 3px;
+    }
+    a:before {
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+      content: '\f007';
+      float: left;
+      text-align: center;
+      margin: 0 0 0 3px;
+      font-family: FontAwesome;
+      font-size: 18px;
+      background: rgba(43, 42, 42, .5);
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+    }
+    a:hover {
+      color:#3EFF3E;
+      :before {
+          background: rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+  .menu-facebook a:before {
+    content: '\f09a';
+  }
+  .menu-twitter a:before {
+    content: '\f099';
+  }
+  .menu-googleplus a:before {
+    content: '\f0d5';
+  }
+  .menu-linkedin a:before {
+    content: '\f0e1';
+  }
+  .menu-youtube a:before {
+    content: '\f16a';
+  }
+}

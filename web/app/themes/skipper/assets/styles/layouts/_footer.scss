@@ -1,0 +1,28 @@
+footer {
+  background-color: $gray-darker;
+  color: $gray-light3;
+  .container {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  h3 {
+    border-bottom: 1px solid $gray-light3;
+    padding-bottom: 10px;
+  }
+  #copyright {
+    font-style: italic;
+    padding-top: 15px;
+    .copy-right {
+      text-align: right;
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 40px;
+      padding-top: 40px;
+      border-top: 1px solid $gray-light3;
+      text-align: center;
+    }
+  }
+}

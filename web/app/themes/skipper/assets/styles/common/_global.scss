@@ -1,0 +1,119 @@
+body {
+}
+.container {
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+}
+.brand-primary {
+  color: $brand-primary;
+}
+.skipper-post-thumbnail {
+  float:left;
+  padding: 0 10px 10px 0;
+}
+article.type-post {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $gray-lighter;
+}
+.cover {
+  position: relative;
+  -moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  @media (max-width: 767px) {
+        background-attachment: scroll;
+  }
+}
+#landing {
+	position: relative;
+}
+#baselanding {
+  height: 300px;
+  background-size: 120%;
+  background-position: 50% 50%;
+  #skipperlogo {
+    width: 550px;
+  }
+}
+#skipperlogo {
+  margin:60px 30px;
+  z-index:1;
+  width:650px;
+  max-width:75%;
+  position:absolute;
+  box-sizing: border-box;
+  img {
+    max-width: 100%;
+    height:auto;
+  }
+  //Making Sure that we also target the iPhone 6 Plus
+  @media screen and (max-device-width: 736px) and (orientation: landscape) {
+    max-width: 65%;
+    margin-top: 40px;
+  }
+  @media screen and (max-device-width: 480px) and (orientation: portrait){
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+}
+@media \0screen {
+  #skipperlogo img {
+  	width: auto; /* for ie 8 */
+  }
+}
+#fpnext {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  @media screen and (max-width: 320px) {
+    left: 100px;
+    right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .glyphicon {
+    font-size: 36px;
+    color: #fff;
+    margin-left:40px;
+    margin-bottom:10px;
+    -webkit-animation: flickerAnimation 3s infinite;
+    -moz-animation: flickerAnimation 3s infinite;
+    -o-animation: flickerAnimation 3s infinite;
+    animation: flickerAnimation 3s infinite;
+  }
+  #see-more {
+      border: 1px solid #fff;
+      color: #fff;
+      font-weight: normal;
+      padding: 10px 25px;
+      background: transparent;
+      display: block;
+      position: relative;
+      -webkit-animation: fadeHeader 1 1s ease-in;
+      animation: fadeHeader 1 1s ease-in;
+      margin-bottom: 30px;
+      margin-right: 35px;
+      @media screen and (max-device-width: 480px) and (orientation: portrait){
+        margin-right: 0;
+      }
+  }
+  #see-more:hover {
+      background: rgba(0, 0, 0, 0.1);
+      border-color: #fff;
+      color: #fff;
+  }
+}
+.page, .blog {
+  .container:nth-child(1n) {
+    padding-top: 40px;
+  }
+  .page-header {
+    margin-top: 0;
+  }
+}

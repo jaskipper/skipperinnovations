@@ -1,0 +1,80 @@
+#fpdescription {
+  padding-top: $section-spacing/2;
+  padding-bottom: $section-spacing/2;
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .container {
+    text-align: center;
+  }
+  .desc {
+    font-size: 24px;
+    font-weight: 300;
+    color: $gray-light;
+    font-style: italic;
+  }
+  .desc:before {
+    width: 50%;
+    border-top: 5px solid $gray-light3;
+    margin-left: 25%;
+    height: $section-spacing;
+  }
+  .desc:after {
+    width: 40%;
+    border-bottom: 3px solid $gray-light3;
+    margin-left: 30%;
+    height: $section-spacing;
+  }
+}
+
+#fp-social {
+  .container {
+    h2 {
+      font-size: 26px;
+    }
+  }
+}
+
+@-webkit-keyframes fadeHeader {
+    0% { top: 20px; opacity: 0; }
+    50% { top: 20px; opacity: 0;}
+    100% { top: 0; opacity: 1; }
+}
+
+@-moz-keyframes fadeHeader {
+    0% { top: 20px; opacity: 0; }
+    50% { top: 20px; opacity: 0; }
+    100% { top: 0; opacity: 1; }
+}
+
+@-o-keyframes fadeHeader {
+    0% { top: 20px; opacity: 0; }
+    50% { top: 20px; opacity: 0; }
+    100% { top: 0; opacity: 1; }
+}
+@keyframes fadeHeader {
+    0% { top: 20px; opacity: 0; }
+    50% { top: 20px; opacity: 0; }
+    100% { top: 0; opacity: 1; }
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
