@@ -1,0 +1,88 @@
+#fp-widgets {
+  background-image: url('/app/uploads/2015/01/skipperinnovations-mix-4-sm.jpg');
+  #fp-widgets-cover {
+    background-color: rgba(45, 32, 23, 0.72);
+  }
+  .row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .skipper-text-widget {
+    text-align: center;
+    .glyphicon {
+      font-size: 36px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      line-height: 130px;
+      width: 130px;
+      height: 130px;
+      margin: 0 auto 10px;
+      display: block;
+      border: 3px solid;
+    }
+    h3 a {
+      color: $gray-lighter;
+    }
+    .textwidget {
+      color: $gray-lighter;
+      padding-bottom: 20px;
+    }
+  }
+  #fptext_widget-info {
+    .glyphicon {
+      color: $brand-info;
+    }
+    a.aglyph:hover {
+      color: darken($brand-info, 15%);
+      .glyphicon {
+        color: darken($brand-info, 15%);
+      }
+    }
+  }
+  #fptext_widget-danger {
+    .glyphicon {
+      color: $brand-danger;
+    }
+    a.aglyph:hover {
+      color: darken($brand-danger, 15%);
+      .glyphicon {
+        color: darken($brand-danger, 15%);
+      }
+    }
+  }
+  #fptext_widget-warning {
+    .glyphicon {
+      color: $brand-warning;
+    }
+    a.aglyph:hover {
+      color: darken($brand-warning, 15%);
+      .glyphicon {
+        color: darken($brand-warning, 15%);
+      }
+    }
+  }
+  #fptext_widget-success {
+    .glyphicon {
+      color: $brand-success;
+    }
+    a.aglyph:hover {
+      color: darken($brand-success, 15%);
+      .glyphicon {
+        color: darken($brand-success, 15%);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .widget_skipper_fp_widget:not(:first-child) {
+    padding-top: $section-spacing;
+  }
+  .skipper-text-widget {
+    padding: 0 40px;
+  }
+  .text-widget {
+    min-height: 0;
+  }
+}
