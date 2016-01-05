@@ -30,10 +30,6 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
-    },
-    {
-      "type": "composer",
-      "url": "http://skipperinnovations.com/files/si-plugins/"
     }
   ],
   "require": {
@@ -46,7 +42,6 @@
     "wpackagist-plugin/database-sync": ">=0.5.1",
     "wpackagist-plugin/ewww-image-optimizer": ">=2.5.4",
     "wpackagist-plugin/shortcodes-ultimate": "4.9.9",
-    "skipperinnovations/advanced-custom-fields-pro": ">=5.3.2.2",
     "wpackagist-plugin/contact-form-7": ">=4.3.1"
   },
   "extra": {
