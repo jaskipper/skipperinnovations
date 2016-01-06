@@ -38,9 +38,9 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.4",
     "wpackagist-plugin/simple-lightbox": ">=2.5.2",
+    "wpackagist-plugin/database-sync": ">=0.5.1",
     "wpackagist-plugin/ewww-image-optimizer": ">=2.5.4",
     "wpackagist-plugin/shortcodes-ultimate": "4.9.9",
-    "wpackagist-plugin/wp-migrate-db": "0.7.2",
     "roots/soil": "dev-trunk"
   },
   "extra": {

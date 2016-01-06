@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0d14d36b9abf4878f53ef1d3681fc463",
-    "content-hash": "66c698fd9c9f785b14e04b9a054cabe0",
+    "hash": "9fd2370ace64f6b571d4984cb9604b3e",
+    "content-hash": "7064eb8ffb76ea7f811825e1a31f9d0c",
     "packages": [
         {
             "name": "composer/installers",
@@ -284,6 +284,26 @@
             "time": "2015-12-29 15:10:30"
         },
         {
+            "name": "wpackagist-plugin/database-sync",
+            "version": "0.5.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/database-sync/",
+                "reference": "tags/0.5.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/database-sync.0.5.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/database-sync/"
+        },
+        {
             "name": "wpackagist-plugin/ewww-image-optimizer",
             "version": "2.5.6",
             "source": {
@@ -342,26 +362,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/simple-lightbox/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-migrate-db",
-            "version": "0.7.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-migrate-db/",
-                "reference": "tags/0.7.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.0.7.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-migrate-db/"
         }
     ],
     "packages-dev": [],
