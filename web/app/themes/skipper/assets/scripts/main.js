@@ -75,16 +75,15 @@
         $(document).ready(function () {
 
           function blogheight() {
-            var blogheight = $('#fp-blog').height() + $('.fpreadblog').height();
-            $('.social-feed-container').height(blogheight);
-
-            $(window).bind('resizeEnd', function () {
-              windowheight = $(window).height() - $(".logged-in #wpadminbar").height();
-              $("#landing").height(windowheight);
-            });
+            var fpblogheight = $('#fp-blog').height() + $('.fpreadblog').height();
+            $('.social-feed-container').height(fpblogheight);
           }
-
           blogheight();
+
+          $(window).bind('resizeEnd', function () {
+            windowheight = $(window).height() - $(".logged-in #wpadminbar").height();
+            $("#landing").height(windowheight);
+          });
 
           $(window).resize(function () {
               blogheight();
@@ -136,7 +135,7 @@
                   },
 
                   // GENERAL SETTINGS
-                  template: '/app/themes/skipper/bower_components/social-feed/template.html', // a path to the template file
+                  template: '/app/themes/skipper/templates/socialfeed-template.html', // a path to the template file
                   length: 200,
                   show_media: true,
                   update_period: 5000,
