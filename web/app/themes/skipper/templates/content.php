@@ -1,6 +1,6 @@
 <article <?php post_class(); ?>>
   <header>
-    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
     <div class="skipper-post-thumbnail">
       <?php the_post_thumbnail('thumbnail'); ?>
     </div>

@@ -8,9 +8,19 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "3.3.6",
-    "font-awesome": "~4.5.0"
+    "font-awesome": "~4.5.0",
+    "social-feed": "~0.1.2"
   },
   "overrides": {
+    "social-feed": {
+      "main": [
+        "./css/jquery.socialfeed.css",
+        "../codebird-js/codebird.js",
+        "../doT/doT.min.js",
+        "../moment/min/moment.min.js",
+        "./js/jquery.socialfeed.js"
+      ]
+    },
     "bootstrap-sass": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",

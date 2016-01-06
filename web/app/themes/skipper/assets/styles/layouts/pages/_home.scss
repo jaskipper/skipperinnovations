@@ -22,17 +22,20 @@
   }
   .desc:after {
     width: 40%;
-    border-bottom: 3px solid $gray-light3;
+    border-bottom: 3px solid $gray-lighter;
     margin-left: 30%;
     height: $section-spacing;
   }
 }
-
-#fp-social {
-  .container {
-    h2 {
-      font-size: 26px;
-    }
+#fp-blog {
+  border-top: 1px solid $gray-lighter;
+}
+.fpreadblog {
+  margin-top: 30px;
+}
+.socialwrap {
+  @media screen and (max-width: 767px) {
+    margin-top: $section-spacing;
   }
 }
 

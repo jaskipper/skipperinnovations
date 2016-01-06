@@ -20,7 +20,7 @@ use Roots\Sage\Wrapper;
     ?>
     <section id="landing" class="cover" style="background-image: url('<?php echo get_theme_mod('header_bg_image') ?>');">
       <div id="skipperlogo">
-        <img src="<?php echo get_header_image(); ?>" width="650px">
+        <a href="#" class="sk-smoothscroll" data-target="body"><img src="<?php echo get_header_image(); ?>" width="650px"></a>
       </div>
 
       <div id="fpnext">
@@ -39,7 +39,7 @@ use Roots\Sage\Wrapper;
       <div id="fp-widgets-cover">
         <div class="container">
           <div class="row">
-            
+
               <?php dynamic_sidebar( 'sidebar-fp-widgets' ); ?>
 
           </div>
@@ -49,24 +49,31 @@ use Roots\Sage\Wrapper;
 
     <section id="fp-social" class="">
       <div class="wrap container">
-        <div class="col-md-8 col-sm-8">
-          <?php
+        <div class="col-md-8 col-sm-6">
+          <h2>Blog</h2>
+          <div id="fp-blog">
+            <?php
 
-          // The Query
-          $recentPosts = new WP_Query();
-          $recentPosts->query('showposts=3');
+            // The Query
+            $recentPosts = new WP_Query();
+            $recentPosts->query('showposts=3');
 
-          while ($recentPosts -> have_posts()) : $recentPosts -> the_post(); ?>
-            <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-          <?php endwhile;
-          /* Restore original Post Data */
-          wp_reset_postdata();
+            while ($recentPosts -> have_posts()) : $recentPosts -> the_post(); ?>
+              <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+            <?php endwhile;
+            /* Restore original Post Data */
+            wp_reset_postdata();
 
-          ?>
+            ?>
+          </div>
+          <a href="/skipperblog"><h3 class="fpreadblog"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Read more from the Blog...</h3></a>
         </div>
-        <div class="col-md-4 col-sm-4">
 
-          <?php dynamic_sidebar( 'sidebar-social' ); ?>
+        <div class="col-md-4 col-sm-6 socialwrap">
+
+          <?php //dynamic_sidebar( 'sidebar-social' ); ?>
+          <h2>Social Media</h2>
+          <div id="fp-social" class="social-feed-container"></div>
 
         </div>
       </div>

@@ -12,7 +12,7 @@
           <span>Menu</span>
         </div>
         <div id="skipperbrand" class="navbar-toggle">
-          <a href="/#landing"><img src="<?php echo get_header_image(); ?>" width="180px"></a>
+          <a <?php if ( is_front_page() ) { echo 'href="#" class="sk-smoothscroll"'; } else { echo 'href="/"'; } ?> data-target="body"><img src="<?php echo get_header_image(); ?>" width="180px"></a>
         </div>
       </div>
       <div class="collapse navbar-collapse">

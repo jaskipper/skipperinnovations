@@ -117,3 +117,20 @@ article.type-post {
     margin-top: 0;
   }
 }
+.social-feed-container {
+  border-top: 2px solid $gray-lighter;
+  border-bottom: 2px solid $gray-lighter;
+  height: 800px;
+  overflow-y: scroll;
+  padding: 20px 10px;
+  @media screen and (max-width: 767px) and (orientation: landscape) {
+    padding: 20px 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 20px 20px;
+  }
+}
+.social-feed-element .muted {
+    padding-top: 4px;
+    font-size: 12px;
+}
