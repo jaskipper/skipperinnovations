@@ -20,7 +20,7 @@ function setup() {
   add_theme_support('soil-google-analytics', 'UA-71298311-1');
 
   //Move all JS to the footer
-  add_theme_support('soil-js-to-footer');
+  //add_theme_support('soil-js-to-footer');
 
   //Convert search results from /?s=query to /search/query/
   add_theme_support('soil-nice-search');
