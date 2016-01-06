@@ -3,7 +3,6 @@ web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
 !web/app/mu-plugins/skipper*/
-!web/app/mu-plugins/soil/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
