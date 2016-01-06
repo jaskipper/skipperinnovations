@@ -16,6 +16,15 @@ function setup() {
   add_theme_support('soil-jquery-cdn');
   add_theme_support('soil-relative-urls');
 
+  //Google Analytics (more info)
+  add_theme_support('soil-google-analytics', 'UA-71298311-1');
+
+  //Move all JS to the footer
+  add_theme_support('soil-js-to-footer');
+
+  //Convert search results from /?s=query to /search/query/
+  add_theme_support('soil-nice-search');
+
   // Make theme available for translation
   // Community translations can be found at https://github.com/roots/sage-translations
   load_theme_textdomain('sage', get_template_directory() . '/lang');
