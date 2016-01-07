@@ -9,9 +9,15 @@
   "dependencies": {
     "bootstrap-sass": "3.3.6",
     "font-awesome": "~4.5.0",
-    "social-feed": "~0.1.2"
+    "social-feed": "~0.1.2",
+    "social-sharing": "https://github.com/cferdinandi/social-sharing.git#~1.7.2"
   },
   "overrides": {
+    "social-sharing": {
+      "main": [
+        "./src/sass/social-sharing.scss"
+      ]
+    },
     "social-feed": {
       "main": [
         "./css/jquery.socialfeed.css",
