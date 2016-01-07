@@ -121,23 +121,6 @@
             updateFeed();
         });
 
-        function socialfeedheight() {
-          if ( $('body').hasClass('home') ) {
-            var fpblogheight = $('#fp-blog').height() + $('.fpreadblog').height();
-            $('.social-feed-container').height(fpblogheight);
-          } else {
-            var mainheight = $('.main').outerHeight(true) - $('.socialh2').outerHeight(true);
-            $('.social-feed-container').outerHeight(mainheight);
-          }
-        }
-
-        socialfeedheight();
-
-        $(window).resize(function () {
-            socialfeedheight();
-        });
-
-
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -155,7 +138,14 @@
             $("#landing").height(windowheight);
           });
 
+          function socialfeedheight() {
+              var fpblogheight = $('#fp-blog').height() + $('.fpreadblog').height();
+              $('.social-feed-container').height(fpblogheight);
+          }
+          socialfeedheight();
+
           $(window).resize(function () {
+              socialfeedheight();
           });
 
           $(window).resize(function () {

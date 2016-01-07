@@ -11,6 +11,12 @@
     <div>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
     </div>
+    <div>
+      <?php //previous_post_link() ?>
+    </div>
+    <div>
+      <?php //next_post_link() ?>
+    </div>
     <?php get_template_part('templates/socialshare'); ?>
     <?php comments_template('/templates/comments.php'); ?>
   </article>
