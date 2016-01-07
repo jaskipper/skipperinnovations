@@ -109,9 +109,9 @@ article.type-post {
       color: #fff;
   }
 }
-.page, .blog {
+.page, .blog, .single {
   .container:nth-child(1n) {
-    padding-top: 40px;
+    padding-top: 30px;
   }
   .page-header {
     margin-top: 0;
@@ -119,7 +119,7 @@ article.type-post {
 }
 .social-feed-container {
   border-top: 2px solid $gray-lighter;
-  border-bottom: 2px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
   height: 800px;
   overflow-y: scroll;
   padding: 20px 10px;
