@@ -28,6 +28,33 @@ body {
   float:left;
   padding: 0 10px 10px 0;
 }
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba(9, 9, 9, .78);
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style-type: none;
+  white-space: nowrap;
+  li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    ::before {
+      content: "\f178";
+      font-family: FontAwesome;
+      padding-right: 6px;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+  }
+}
+.menu-item-has-children:hover {
+  .sub-menu {
+    display: block;
+  }
+}
 article.type-post {
   padding-bottom: 10px;
   border-bottom: 1px solid $gray-lighter;
