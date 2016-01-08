@@ -96,7 +96,7 @@
                 instagram: {
                     accounts: ['@jasonaskipper'],
                     limit: 3,
-                    client_id: '4add9e81cc964494bde97907372218cc',
+                    client_id: '',
                     access_token: '36291383.1677ed0.bcf5591964a34a7a80072831c68b695e'
                 },
 
@@ -137,7 +137,7 @@
             windowheight = $(window).height() - $(".logged-in #wpadminbar").height();
             $("#landing").height(windowheight);
           });
-          
+
           function socialfeedheight() {
               var fpblogheight = $('#fp-blog').height() + $('.fpreadblog').height();
               $('.social-feed-container').height(fpblogheight);
