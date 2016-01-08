@@ -53,6 +53,7 @@ body {
 .menu-item-has-children:hover {
   .sub-menu {
     display: block;
+    position: relative;
   }
 }
 article.type-post {

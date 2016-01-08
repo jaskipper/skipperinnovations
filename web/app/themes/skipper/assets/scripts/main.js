@@ -62,6 +62,7 @@
             showbranding();
         });
 
+        //Social Feed
         var updateFeed = function() {
             //var initialQuery = $('#query').val();
             //initialQuery = initialQuery.replace(" ", "");
