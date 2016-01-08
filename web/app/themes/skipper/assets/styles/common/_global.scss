@@ -8,9 +8,21 @@ body {
   color: $brand-primary;
 }
 .alignleft, .alignright {
-  @media (max-width: 767px) {
-    width: 100%;
+  /* Portrait */
+  @media only screen
+    and (max-device-width: 500px)
+    and (orientation: portrait) {
+      width: 100%;
   }
+  max-width: 100%;
+}
+.alignleft {
+  float: left;
+  margin-right: 10px;
+}
+.alignright {
+  float: right;
+  margin-left: 10px;
 }
 .skipper-post-thumbnail {
   float:left;
