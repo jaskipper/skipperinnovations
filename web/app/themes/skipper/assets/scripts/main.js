@@ -137,7 +137,7 @@
             windowheight = $(window).height() - $(".logged-in #wpadminbar").height();
             $("#landing").height(windowheight);
           });
-
+          
           function socialfeedheight() {
               var fpblogheight = $('#fp-blog').height() + $('.fpreadblog').height();
               $('.social-feed-container').height(fpblogheight);

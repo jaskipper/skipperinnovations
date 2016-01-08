@@ -67,7 +67,7 @@ article.type-post {
 	background-size: cover;
   background-position: 50% 50%;
   background-attachment: fixed;
-  @media (max-width: 767px) {
+  @media screen and (max-width: 1024px) {
         background-attachment: scroll;
   }
 }
