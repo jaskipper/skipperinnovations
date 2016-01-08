@@ -105,7 +105,7 @@
                 template: '/app/themes/skipper/templates/socialfeed-template.html', // a path to the template file
                 length: 200,
                 show_media: true,
-                update_period: 5000,
+                update_period: 60000,
                 // When all the posts are collected and displayed - this function is evoked
                 callback: function() {
                     console.log('all posts are collected');
