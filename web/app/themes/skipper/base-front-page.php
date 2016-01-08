@@ -56,11 +56,12 @@ use Roots\Sage\Wrapper;
 
             // The Query
             $recentPosts = new WP_Query();
-            $recentPosts->query('showposts=3');
+            $recentPosts->query(array ('posts_per_page' => 3) );
 
             while ($recentPosts -> have_posts()) : $recentPosts -> the_post(); ?>
               <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-            <?php endwhile;
+            <?php endwhile; ?>
+            <?php 
             /* Restore original Post Data */
             wp_reset_postdata();
 

@@ -129,8 +129,29 @@ article.type-post {
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     padding: 20px 20px;
   }
+  .social-feed-element .muted {
+      padding-top: 4px;
+      font-size: 12px;
+  }
 }
-.social-feed-element .muted {
-    padding-top: 4px;
-    font-size: 12px;
+.nav-links {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  .nav-previous a::before {
+    content: "\f060";
+    font-family: FontAwesome;
+    padding-right: 4px;
+  }
+  .nav-previous {
+    float: left;
+  }
+  .nav-next {
+    float: right;
+  }
+  .nav-next a::after {
+    content: "\f061";
+    font-family: FontAwesome;
+    padding-left: 4px;
+  }
 }
