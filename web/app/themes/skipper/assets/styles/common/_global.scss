@@ -31,6 +31,9 @@ body {
 .sub-menu {
   display: none;
   position: absolute;
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
   background-color: rgba(9, 9, 9, .7);
   padding-left: 15px;
   padding-right: 15px;
@@ -53,7 +56,6 @@ body {
 .menu-item-has-children:hover {
   .sub-menu {
     display: block;
-    position: relative;
   }
 }
 article.type-post {
@@ -199,4 +201,7 @@ article.type-post {
     font-family: FontAwesome;
     padding-left: 4px;
   }
+}
+.social-feed-element p.social-feed-text {
+  overflow: visible;
 }
