@@ -135,7 +135,8 @@
         $(document).ready(function () {
 
           $(window).bind('resizeEnd', function () {
-            windowheight = $(window).height() - $(".logged-in #wpadminbar").height();
+            var height = window.innerHeight ? window.innerHeight : $(window).height();
+            windowheight = height - $(".logged-in #wpadminbar").height();
             $("#landing").height(windowheight);
           });
 
