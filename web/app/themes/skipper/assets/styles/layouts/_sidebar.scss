@@ -1,11 +1,16 @@
 .sbadds {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
+
 h3 {
   border-bottom: 2px solid $gray-lighter;
-  padding-bottom: 8px
+  padding-bottom: 10px
 }
 h3.socialh3 {
   border-bottom: none;
+  padding-bottom: 0px;
 }
