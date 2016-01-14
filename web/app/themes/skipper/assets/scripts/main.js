@@ -151,7 +151,7 @@
               var fpblogheight = $('#fp-blog').height() + $('.fpreadblog').height();
               $('.social-feed-container').height(fpblogheight);
           }
-          socialfeedheight();
+          //socialfeedheight();
 
           $(window).resize(function () {
               socialfeedheight();

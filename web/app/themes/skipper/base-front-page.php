@@ -61,7 +61,7 @@ use Roots\Sage\Wrapper;
             while ($recentPosts -> have_posts()) : $recentPosts -> the_post(); ?>
               <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
             <?php endwhile; ?>
-            <?php 
+            <?php
             /* Restore original Post Data */
             wp_reset_postdata();
 
@@ -75,7 +75,19 @@ use Roots\Sage\Wrapper;
           <?php //dynamic_sidebar( 'sidebar-social' ); ?>
           <h2>Social Media</h2>
           <div id="fp-social" class="social-feed-container"></div>
-
+          <h2>Sponsored Links</h2>
+          <div id="fp-sponsored-links" >
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- SkipperInnovations1 -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3807336390042990"
+                 data-ad-slot="5969966869"
+                 data-ad-format="auto"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
         </div>
       </div>
     </section>
