@@ -149,12 +149,13 @@
 
           function socialfeedheight() {
               var fpblogheight = $('#fp-blog').height() + $('.fpreadblog').height();
-              $('.social-feed-container').height(fpblogheight);
+              var fpadheight = $('#fpads').height();
+              $('.social-feed-container').height(fpblogheight - fpadheight);
           }
-          //socialfeedheight();
+          socialfeedheight();
 
           $(window).resize(function () {
-              //socialfeedheight();
+              socialfeedheight();
           });
 
           $(window).resize(function () {
