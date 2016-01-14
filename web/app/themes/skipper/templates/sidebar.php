@@ -1,3 +1,6 @@
+<div class="sbshare">
+  <?php get_template_part('templates/socialshare'); ?>
+</div>
 <h3>Sponsored Links</h3>
 <div class="sbadds">
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

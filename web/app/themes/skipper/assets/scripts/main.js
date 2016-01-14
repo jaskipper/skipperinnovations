@@ -127,7 +127,7 @@
 
           $('[data-toggle="tooltip"]').tooltip();
 
-        });
+        }); //Document Load
 
       },
       finalize: function() {
@@ -173,9 +173,209 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'hit_the_jackpot': {
       init: function() {
-        // JavaScript to be fired on the about us page
+        // JavaScript to be fired on the hit the jackpot page
+        //put results in variables, making these global
+        $(document).ready(function(){
+
+
+                    var holdResults = "";
+                    var holdPb = "";
+                    //setup the variable for the duplicate test
+                    var duptest = "";
+                    //PBActualResults
+                    var actualResults = [8, 27, 34, 4, 19];
+                    var actualPbResults = 10;
+                    var pbMatches = false;
+                    var wbMatches = "";
+                    var numMatches = 0;
+                    var pbMatch = false;
+                    var totalTries = 0;
+                    var thisWon = 0;
+                    var totalWon = 0;
+
+                    // Clean up Everything and Start over on "Clear"
+                    $("#btnClear").click(function() {
+                      $("#btnGet").html("Get Started!");
+                      $("#btnClear").css("display", "none");
+                      $(".num span").html("&nbsp;");
+                      $("#myResults h3").html("");
+                      $("#results").html("");
+                      $(".thiswon").html("");
+                      $("#tries").html(0);
+                      $("#tspent").html("$0.00");
+                      $("#twon").html("$0.00");
+                      holdResults = "";
+                      holdPb = "";
+                      totalWon = 0;
+                      totalTries = 0;
+
+                    });
+
+                    //Get a random whole number
+                    function getRandomNumber(max) {
+                      max = Math.floor((Math.random() * max) + 1);
+                      return max;
+                    }
+
+                    //function to sort and compare the #'s for duplicates
+                    function sortandcompare(thisnum) {
+                      //sort the array
+                      thisnum.sort( function(a, b){return a-b;} );
+                      //compare the array to see if there are any duplicates
+                      //this loops through each number and compares it with the next one. If there is a duplicate, it changes that number and then breaks out. Then this function is repeated/called again until all duplicates are gone.
+                      for (i = 0; i < thisnum.length - 1; i++) {
+                        if (thisnum[i + 1] === thisnum[i]) {
+                          console.log("Uh oh, There's a Duplicate! [" + thisnum + "] Fixing...");
+                          thisnum[i] = getRandomNumber(69);
+                          duptest = "duplicate";
+                          //return duptest;
+                          //break and exit if there is
+                          return false;
+                        }
+                      }
+                      //if all went well, there are no duplicates
+                      duptest = "no";
+                      console.log("Your # is: " + thisnum);
+                      //return duptest;
+                    }
+
+                    //Show the Previous Results below the actual numbers
+                    function getPrevRes() {
+                      //declare the res var and set it to ""
+                      res = "";
+                      //loop through it and put each num in a <span>#</span>
+                      for (i = 0; i < holdResults.length; i++) {
+                        res = res + "<span>" + holdResults[i] + "</span>";
+                      }
+                      //add the Powerball number in at the end
+                      res = res + ("<span class=\"pbNum\">" + holdPb + "</span>");
+                      //return the final string
+                      return res;
+                    }
+
+                    function testActualResults(thisnum, pb) {
+
+                      var matches = [];
+                      for (i = 0; i < thisnum.length; i++) {
+                        if ( ($.inArray(thisnum[i], actualResults)) >= 0 ) {
+                          matches.push(thisnum[i]);
+                          $("#num" + (i + 1)).addClass("animated");
+                        } else {
+                          $("#num" + (i + 1)).removeClass("animated");
+                        }
+                      }
+                      if (pb === actualPbResults) {
+                        pbMatches = "Powerball";
+                        pbMatch = true;
+                        $('.pbmatch').html("Matches!");
+                        $("#num6").addClass("animated");
+                      } else {
+                        pbMatches = "";
+                        pbMatch = false;
+                        $('.pbmatch').html("Doesn't Match");
+                        $("#num6").removeClass("animated");
+                      }
+                      if (matches.length > 0) {
+                        var matchNum = matches.length;
+                        var matchName = "";
+                        if (matches.length === 1) {
+                          matchName = "Match";
+                        } else {
+                          matchName = "Matches!";
+                        }
+                        wbMatches = "Matches: (" + matches + ")  ";
+                        $(".wbmatch").text(matches.length + " " + matchName + " (" + matches + ")" );
+                      } else {
+                        wbMatches = "";
+                        $(".wbmatch").html("0 Matches");
+                      }
+                      numMatches = matches.length;
+                    }
+
+                    function getWinnings(numMatches,pbMatch) {
+                      thisWon = 0;
+                      if (pbMatch === true) {
+                          if (numMatches <= 1){
+                            thisWon = 4;
+                          } else if (numMatches === 2) {
+                            thisWon = 7;
+                          } else if (numMatches === 3) {
+                            thisWon = 100;
+                          } else if (numMatches === 4) {
+                            thisWon = 50000;
+                          } else if (numMatches === 5) {
+                            thisWon = 1500000000;
+                          }
+                      } else {
+                        if (numMatches < 3) {
+                          thisWon = 0;
+                        } else if (numMatches === 3) {
+                          thisWon = 7;
+                        } else if (nummatches === 4) {
+                          thisWon = 100;
+                        } else if (nummatches === 5) {
+                          thisWon = 1000000;
+                        }
+                      }
+                      $(".thiswon").html("$" + thisWon + ".00");
+                    }
+
+                    //The Function that runs in pushing the get numbers button
+                    $("#btnGet").click(function()/*{function getNumbers() */{
+                      totalTries = totalTries + 1;
+                      $("#tries").html(totalTries);
+                      $("#tspent").html("$" + totalTries * 2 + ".00");
+
+                      //change the text to "Get More" and show the "Clear" button
+                      $("#btnGet").html("Get More");
+                      $("#btnClear").css("display", "inline-block");
+
+                      //setup the variable array for our 5 numbers
+                      var thisnum = [];
+
+                      //get the 5 numbers
+                      for (i = 0; i < 5; i++) {
+                        thisnum.push( getRandomNumber(69) );
+                      }
+
+                      //Send the array off to sort and to check on duplicates. If there are duplicicates send it off again until it returns with no duplicates.
+                      do {
+                        sortandcompare(thisnum);
+                      } while ( duptest === "duplicate" );
+
+                      //print out the first 5 numbers
+                      for (i = 0; i < 5; i++) {
+                        $("#num" + (i + 1) + " span").html( thisnum[i] );
+                      }
+
+                      //get the random powerball whole number
+                      var pb = getRandomNumber(26);
+                      //print out the powerball number
+                      $(".pb span").html(pb);
+
+                      //Check to see if we already had some results and if so post them
+                      if (holdResults !== "") {
+                        $("#myResults h3").html("Previous Results:");
+                        //I want the last numbers to show up on the top of the list, pushing everything else down. That's why we are adding "prepend".
+                        $("#results").prepend(getPrevRes() + holdWbMatches + holdPbMatches + "<br>");
+                      }
+
+                      testActualResults(thisnum, pb);
+
+                      getWinnings(numMatches,pbMatch);
+                      totalWon = totalWon + thisWon;
+                      $("#twon").html("$" + totalWon + ".00");
+
+                      //hold the 5 number array and the powerball number
+                      holdResults = thisnum;
+                      holdPb = pb;
+                      holdWbMatches = wbMatches;
+                      holdPbMatches = pbMatches;
+                    });
+
+        }); //Document Ready
       }
     }
   };
