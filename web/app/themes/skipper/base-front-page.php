@@ -56,7 +56,7 @@ use Roots\Sage\Wrapper;
 
             // The Query
             $recentPosts = new WP_Query();
-            $recentPosts->query(array ('posts_per_page' => 3) );
+            $recentPosts->query(array ('posts_per_page' => 4) );
 
             while ($recentPosts -> have_posts()) : $recentPosts -> the_post(); ?>
               <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>

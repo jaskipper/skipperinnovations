@@ -154,7 +154,7 @@
           //socialfeedheight();
 
           $(window).resize(function () {
-              socialfeedheight();
+              //socialfeedheight();
           });
 
           $(window).resize(function () {
