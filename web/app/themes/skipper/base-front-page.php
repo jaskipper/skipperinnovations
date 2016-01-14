@@ -79,11 +79,11 @@ use Roots\Sage\Wrapper;
             <h2>Sponsored Links</h2>
             <div id="fp-sponsored-links" >
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <!-- SkipperInnovations1 -->
+              <!-- skipperinnovations -->
               <ins class="adsbygoogle"
                    style="display:block"
-                   data-ad-client="ca-pub-3807336390042990"
-                   data-ad-slot="5969966869"
+                   data-ad-client="ca-pub-8170675797595742"
+                   data-ad-slot="4889040857"
                    data-ad-format="auto"></ins>
               <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
