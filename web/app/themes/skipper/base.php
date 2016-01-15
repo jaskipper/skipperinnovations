@@ -15,6 +15,9 @@ use Roots\Sage\Wrapper;
       </div>
     <![endif]-->
     <?php
+      get_template_part('templates/fbinit');
+    ?>
+    <?php
       do_action('get_header');
       get_template_part('templates/header');
     ?>
