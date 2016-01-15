@@ -179,7 +179,6 @@
         //put results in variables, making these global
         $(document).ready(function(){
 
-
                     var holdResults = "";
                     var holdPb = "";
                     //setup the variable for the duplicate test
@@ -194,6 +193,7 @@
                     var totalTries = 0;
                     var thisWon = 0;
                     var totalWon = 0;
+                    var totalSpent = 0;
 
                     // Clean up Everything and Start over on "Clear"
                     $("#btnClear").click(function() {
@@ -326,7 +326,8 @@
                     $("#btnGet").click(function()/*{function getNumbers() */{
                       totalTries = totalTries + 1;
                       $("#tries").html(totalTries);
-                      $("#tspent").html("$" + totalTries * 2 + ".00");
+                      totalSpent = totalTries * 2;
+                      $("#tspent").html("$" + totalSpent + ".00");
 
                       //change the text to "Get More" and show the "Clear" button
                       $("#btnGet").html("Get More");
@@ -374,6 +375,24 @@
                       holdWbMatches = wbMatches;
                       holdPbMatches = pbMatches;
                     });
+
+                    $("#share-results").click(function() {
+                      // calling the API ...
+                      totalWinnings = totalWon - totalSpent;
+                      if (totalWinnings < 0) {
+                        wonlost = "Lost";
+                      } else {
+                        wonlost = "Won";
+                      }
+                      var obj = {
+                        method: 'feed',
+                        link: 'https://www.skipperinnovations.com/hit-the-jackpot',
+                        description: "Look how much I " + wonlost + " playing the Powerball Lottery " + totalTries + " times. <br />" + wonlost + ": " + totalWinnings,
+                        picture: 'https://skipperinnovations.com/app/uploads/2016/01/POWERBALL_PP-1.png',
+                        name: 'Hit The Jackpot! - Skipper Innovations'
+                      };
+                       FB.ui(obj);
+                     });
 
         }); //Document Ready
       }

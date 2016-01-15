@@ -53,14 +53,21 @@
           <h3>
             Totals
           </h3>
-          <div class="clearfix">
-            <div class="title">Total Tries: </div><span id="tries">0</span>
-          </div>
-          <div class="clearfix">
-            <div class="title">Total Spent: </div><span id="tspent">$0.00</span>
-          </div>
-          <div class="clearfix">
-            <div class="title">Total Won: </div><span id="twon">$0.00</span>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="clearfix">
+                <div class="title">Total Tries: </div><span id="tries">0</span>
+              </div>
+              <div class="clearfix">
+                <div class="title">Total Spent: </div><span id="tspent">$0.00</span>
+              </div>
+              <div class="clearfix">
+                <div class="title">Total Won: </div><span id="twon">$0.00</span>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <button id="share-results" type="button" class="btn btn-success btn-sm">Share Your Results!</button>
+            </div>
           </div>
         </div>
         <div id="myResults">
