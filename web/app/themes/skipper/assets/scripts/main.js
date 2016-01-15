@@ -184,8 +184,8 @@
           //setup the variable for the duplicate test
           var duptest = "";
           //PBActualResults
-          //var actualResults = [8, 27, 34, 4, 19];
-          var actualResults = [1, 2, 3, 4, 5];
+          var actualResults = [8, 27, 34, 4, 19];
+          //var actualResults = [1, 2, 3, 4, 5];
           var actualPbResults = 10;
           var pbMatches = false;
           var wbMatches = "";
@@ -389,11 +389,13 @@
             } else {
               wonlost = "Won";
             }
+            numTotalWinnings = $.number(totalWinnings,2,'.',',');
+            numTotalWinnings = "$" + numTotalWinnings;
 
             FB.ui({
               method: 'share',
               href: 'https://www.skipperinnovations.com/hit-the-jackpot',
-              caption: "I WOULD have " + wonlost + " <span class='number'>" + totalWinnings + "</span" + "playing the Powerball Lottery " + totalTries + " times!",
+              caption: "I WOULD have " + wonlost + " " + numTotalWinnings + " playing the Powerball Lottery " + totalTries + " times!",
             }, function(response){});
            });
 
