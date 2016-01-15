@@ -393,7 +393,7 @@
             FB.ui({
               method: 'share',
               href: 'https://www.skipperinnovations.com/hit-the-jackpot',
-              caption: "I WOULD have " + wonlost + " " + $("#twon").html() + " playing the Powerball Lottery " + totalTries + " times!",
+              caption: "I WOULD have " + wonlost + " <span class='number'>" + totalWinnings + "</span" + "playing the Powerball Lottery " + totalTries + " times!",
             }, function(response){});
            });
 
