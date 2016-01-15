@@ -324,57 +324,59 @@
 
           //The Function that runs in pushing the get numbers button
           $("#btnGet").click(function()/*{function getNumbers() */{
-            totalTries = totalTries + 1;
-            $("#tries").html(totalTries);
-            totalSpent = totalTries * 2;
-            $("#tspent").html("$" + totalSpent + ".00");
+              totalTries = totalTries + 1;
+              $("#tries").html(totalTries);
+              totalSpent = totalTries * 2;
+              $("#tspent").html("$" + totalSpent + ".00");
 
-            //change the text to "Get More" and show the "Clear" button
-            $("#btnGet").html("Get More");
-            $("#btnClear").css("display", "inline-block");
+              //change the text to "Get More" and show the "Clear" button
+              $("#btnGet").html("Get More");
+              $("#btnClear").css("display", "inline-block");
 
-            //setup the variable array for our 5 numbers
-            var thisnum = [];
+              //setup the variable array for our 5 numbers
+              var thisnum = [];
 
-            //get the 5 numbers
-            for (i = 0; i < 5; i++) {
-              thisnum.push( getRandomNumber(69) );
-            }
+              //get the 5 numbers
+              for (i = 0; i < 5; i++) {
+                thisnum.push( getRandomNumber(69) );
+              }
 
-            //Send the array off to sort and to check on duplicates. If there are duplicicates send it off again until it returns with no duplicates.
-            do {
-              sortandcompare(thisnum);
-            } while ( duptest === "duplicate" );
+              //Send the array off to sort and to check on duplicates. If there are duplicicates send it off again until it returns with no duplicates.
+              do {
+                sortandcompare(thisnum);
+              } while ( duptest === "duplicate" );
 
-            //print out the first 5 numbers
-            for (i = 0; i < 5; i++) {
-              $("#num" + (i + 1) + " span").html( thisnum[i] );
-            }
+              //print out the first 5 numbers
+              for (i = 0; i < 5; i++) {
+                $("#num" + (i + 1) + " span").html( thisnum[i] );
+              }
 
-            //get the random powerball whole number
-            var pb = getRandomNumber(26);
-            //print out the powerball number
-            $(".pb span").html(pb);
+              //get the random powerball whole number
+              var pb = getRandomNumber(26);
+              //print out the powerball number
+              $(".pb span").html(pb);
 
-            //Check to see if we already had some results and if so post them
-            if (holdResults !== "") {
-              $("#myResults h3").html("Previous Results:");
-              //I want the last numbers to show up on the top of the list, pushing everything else down. That's why we are adding "prepend".
-              $("#results").prepend(getPrevRes() + holdWbMatches + holdPbMatches + "<br>");
-            }
+              //Check to see if we already had some results and if so post them
+              if (holdResults !== "") {
+                $("#myResults h3").html("Previous Results:");
+                //I want the last numbers to show up on the top of the list, pushing everything else down. That's why we are adding "prepend".
+                $("#results").prepend(getPrevRes() + holdWbMatches + holdPbMatches + "<br>");
+              }
 
-            testActualResults(thisnum, pb);
+              testActualResults(thisnum, pb);
 
-            getWinnings(numMatches,pbMatch);
-            totalWon = totalWon + thisWon;
-            $("#twon").html("$" + totalWon + ".00");
+              getWinnings(numMatches,pbMatch);
+              totalWon = totalWon + thisWon;
+              $("#twon").html("$" + totalWon + ".00");
 
-            //hold the 5 number array and the powerball number
-            holdResults = thisnum;
-            holdPb = pb;
-            holdWbMatches = wbMatches;
-            holdPbMatches = pbMatches;
+              //hold the 5 number array and the powerball number
+              holdResults = thisnum;
+              holdPb = pb;
+              holdWbMatches = wbMatches;
+              holdPbMatches = pbMatches;
+            
           });
+
 
           $("#share-results").click(function() {
             // calling the API ...
