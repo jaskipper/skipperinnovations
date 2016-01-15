@@ -386,9 +386,9 @@
             }
 
             FB.ui({
-              method: 'feed',
+              method: 'share',
               link: 'https://www.skipperinnovations.com/hit-the-jackpot',
-              caption: "Look how much I " + wonlost + " playing the Powerball Lottery " + totalTries + " times. <br />" + wonlost + "  " + totalWinnings,
+              caption: "I " + wonlost + " " + totalWinnings + " playing the Powerball Lottery " + totalTries + " times!"
             }, function(response){});
            });
 
