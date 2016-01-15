@@ -381,6 +381,7 @@
             totalWinnings = totalWon - totalSpent;
             if (totalWinnings < 0) {
               wonlost = "Lost";
+              totalWinnings = totalWinnings * -1;
             } else {
               wonlost = "Won";
             }
@@ -388,7 +389,7 @@
             FB.ui({
               method: 'feed',
               link: 'https://www.skipperinnovations.com/hit-the-jackpot',
-              caption: "I " + wonlost + " " + totalWinnings + " playing the Powerball Lottery " + totalTries + " times!"
+              caption: "I " + wonlost + " $" + totalWinnings + ".00 playing the Powerball Lottery " + totalTries + " times!"
             }, function(response){});
            });
 
