@@ -78,3 +78,4 @@
       </div>
 
 <?php get_template_part('templates/socialshare'); ?>
+<?php comments_template('/templates/comments.php'); ?>

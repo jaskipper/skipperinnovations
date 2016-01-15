@@ -389,7 +389,7 @@
             FB.ui({
               method: 'feed',
               link: 'https://www.skipperinnovations.com/hit-the-jackpot',
-              caption: "I " + wonlost + " $" + totalWinnings + ".00 playing the Powerball Lottery " + totalTries + " times!"
+              caption: "I WOULD have " + wonlost + " $" + totalWinnings + ".00 playing the Powerball Lottery " + totalTries + " times at skipperinnovations.com!"
             }, function(response){});
            });
 
