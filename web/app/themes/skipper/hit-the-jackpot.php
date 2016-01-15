@@ -47,7 +47,7 @@
           </h3>
           <b class="title">White Ball: </b><span class="wbmatch"></span><br/>
           <b class="title">Powerball: </b><span class="pbmatch"></span><br/>
-          <b class="title">Winnings: </b><span class="thiswon"></span><br/>
+          <b class="title">Winnings: </b><span class="thiswon number"></span><br/>
         </div>
         <div id="Totals">
           <h3>
@@ -59,10 +59,10 @@
                 <div class="title">Total Tries: </div><span id="tries">0</span>
               </div>
               <div class="clearfix">
-                <div class="title">Total Spent: </div><span id="tspent">$0.00</span>
+                <div class="title">Total Spent: </div><span id="tspent" class="number">$0.00</span>
               </div>
               <div class="clearfix">
-                <div class="title">Total Won: </div><span id="twon">$0.00</span>
+                <div class="title">Total Won: </div><span id="twon" class="number">$0.00</span>
               </div>
             </div>
             <div class="col-xs-6">

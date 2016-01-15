@@ -184,7 +184,8 @@
           //setup the variable for the duplicate test
           var duptest = "";
           //PBActualResults
-          var actualResults = [8, 27, 34, 4, 19];
+          //var actualResults = [8, 27, 34, 4, 19];
+          var actualResults = [1, 2, 3, 4, 5];
           var actualPbResults = 10;
           var pbMatches = false;
           var wbMatches = "";
@@ -313,13 +314,13 @@
                 thisWon = 0;
               } else if (numMatches === 3) {
                 thisWon = 7;
-              } else if (nummatches === 4) {
+              } else if (numMatches === 4) {
                 thisWon = 100;
-              } else if (nummatches === 5) {
+              } else if (numMatches === 5) {
                 thisWon = 1000000;
               }
             }
-            $(".thiswon").html("$" + thisWon + ".00");
+            $(".thiswon").html(thisWon);
           }
 
           //The Function that runs in pushing the get numbers button
@@ -327,7 +328,7 @@
               totalTries = totalTries + 1;
               $("#tries").html(totalTries);
               totalSpent = totalTries * 2;
-              $("#tspent").html("$" + totalSpent + ".00");
+              $("#tspent").html(totalSpent);
 
               //change the text to "Get More" and show the "Clear" button
               $("#btnGet").html("Get More");
@@ -367,14 +368,15 @@
 
               getWinnings(numMatches,pbMatch);
               totalWon = totalWon + thisWon;
-              $("#twon").html("$" + totalWon + ".00");
+              $("#twon").html(totalWon);
 
               //hold the 5 number array and the powerball number
               holdResults = thisnum;
               holdPb = pb;
               holdWbMatches = wbMatches;
               holdPbMatches = pbMatches;
-            
+              $(".number").number(true, 2);
+              $(".number").prepend("$");
           });
 
 
@@ -391,7 +393,7 @@
             FB.ui({
               method: 'share',
               href: 'https://www.skipperinnovations.com/hit-the-jackpot',
-              caption: "I WOULD have " + wonlost + " $" + totalWinnings + ".00 playing the Powerball Lottery " + totalTries + " times!",
+              caption: "I WOULD have " + wonlost + " " + $("#twon").html() + " playing the Powerball Lottery " + totalTries + " times!",
             }, function(response){});
            });
 

@@ -11,7 +11,8 @@
     "font-awesome": "~4.5.0",
     "social-sharing": "https://github.com/cferdinandi/social-sharing.git#~1.7.2",
     "social-feed": "~0.1.2",
-    "animate.css": "~3.5.1"
+    "animate.css": "~3.5.1",
+    "teamdf/jquery-number": "jquery-number#~2.1.6"
   },
   "overrides": {
     "social-sharing": {
