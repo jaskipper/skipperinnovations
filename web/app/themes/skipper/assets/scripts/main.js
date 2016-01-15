@@ -386,7 +386,7 @@
             }
 
             FB.ui({
-              method: 'share',
+              method: 'feed',
               link: 'https://www.skipperinnovations.com/hit-the-jackpot',
               caption: "I " + wonlost + " " + totalWinnings + " playing the Powerball Lottery " + totalTries + " times!"
             }, function(response){});
