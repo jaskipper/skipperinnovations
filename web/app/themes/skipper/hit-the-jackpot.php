@@ -64,7 +64,7 @@
             Totals
           </h3>
           <div class="row">
-            <div class="col-xs-6">
+            <div class="col-sm-6 col-xs-12">
               <div class="clearfix">
                 <div class="title">Total Tries: </div><span id="tries">0</span>
               </div>
@@ -75,7 +75,7 @@
                 <div class="title">Total Won: </div><span id="twon" class="number">$0.00</span>
               </div>
             </div>
-            <div class="col-xs-6">
+            <div class="col-sm-6 col-xs-12">
               <button id="share-results" type="button" class="btn btn-success btn-sm">Share Your Results!</button>
             </div>
           </div>
