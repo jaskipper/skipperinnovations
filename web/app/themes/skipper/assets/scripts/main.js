@@ -211,7 +211,6 @@
             holdPb = "";
             totalWon = 0;
             totalTries = 0;
-
           });
 
           //Get a random whole number
@@ -240,6 +239,10 @@
             duptest = "no";
             console.log("Your # is: " + thisnum);
             //return duptest;
+          }
+
+          function addAnimatedClass(element) {
+            $(element).removeClass('animated').hide().show(0).addClass('animated');
           }
 
           //Show the Previous Results below the actual numbers
@@ -271,22 +274,23 @@
             for (i = 0; i < thisnum.length; i++) {
               if ( ($.inArray(thisnum[i], actualResults)) >= 0 ) {
                 matches.push(thisnum[i]);
-                $("#num" + (i + 1)).addClass("animated");
-              } else {
-                $("#num" + (i + 1)).removeClass("animated");
+                addAnimatedClass( "#num" + (i + 1) );
               }
+            }
+            if (matches.length > 0) {
+              addAnimatedClass(".wbmatch");
+            } else {
             }
             actualPbResults = parseInt( $(".pbsm input").val() );
             if (pb === actualPbResults) {
               pbMatches = "Powerball";
               pbMatch = true;
               $('.pbmatch').html("Matches!");
-              $("#num6").addClass("animated");
+              addAnimatedClass("#num6, .pbmatch");
             } else {
               pbMatches = "";
               pbMatch = false;
               $('.pbmatch').html("Doesn't Match");
-              $("#num6").removeClass("animated");
             }
             if (matches.length > 0) {
               var matchNum = matches.length;
@@ -335,6 +339,7 @@
 
           //The Function that runs in pushing the get numbers button
           $("#btnGet").click(function()/*{function getNumbers() */{
+
               totalTries = totalTries + 1;
               $("#tries").html(totalTries);
               totalSpent = totalTries * 2;

@@ -55,8 +55,8 @@
           <h3>
             Current Results
           </h3>
-          <b class="title">White Ball: </b><span class="wbmatch"></span><br/>
-          <b class="title">Powerball: </b><span class="pbmatch"></span><br/>
+          <b class="title">White Ball: </b><span class="wbmatch flash"></span><br/>
+          <b class="title">Powerball: </b><span class="pbmatch flash"></span><br/>
           <b class="title">Winnings: </b><span class="thiswon number"></span><br/>
         </div>
         <div id="Totals">
