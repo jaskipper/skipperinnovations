@@ -251,12 +251,21 @@
               res = res + "<span>" + holdResults[i] + "</span>";
             }
             //add the Powerball number in at the end
-            res = res + ("<span class=\"pbNum\">" + holdPb + "</span>");
+            res = res + ("<span class=\"numsm pbsm\">" + holdPb + "</span>");
             //return the final string
             return res;
           }
 
           function testActualResults(thisnum, pb) {
+
+            actualResults = [];
+            //get the results from top inputs
+            for (i = 0; i < 5; i++) {
+              thistext = $(".numsm:nth-of-type(" + (i + 1) + ") input").val();
+              thistext = parseInt(thistext);
+              console.log(thistext);
+              actualResults.push(thistext);
+            }
 
             var matches = [];
             for (i = 0; i < thisnum.length; i++) {
@@ -267,6 +276,7 @@
                 $("#num" + (i + 1)).removeClass("animated");
               }
             }
+            actualPbResults = parseInt( $(".pbsm input").val() );
             if (pb === actualPbResults) {
               pbMatches = "Powerball";
               pbMatch = true;

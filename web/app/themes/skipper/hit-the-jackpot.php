@@ -11,11 +11,21 @@
 
       <div id="pb-container">
         <img class="size-full wp-image-429 aligncenter" src="https://skipperinnovations.com/app/uploads/2016/01/POWERBALL_PP-1.png" alt="POWERBALL_PP" width="80%" height="395" style="width: 100%; max-width: 400px;">
+        <div id="num-to-match">
+          <b>Numbers to Match</b>
+          <div class="numsm-container">
+            <div class="numsm"><input type="text" value="4" data-toggle="tooltip" title="You can change this number by simply clicking on it and typing in a new one."></input></div>
+            <div class="numsm"><input type="text" value="8" data-toggle="tooltip" title="You can change this number by simply clicking on it and typing in a new one."></input></div>
+            <div class="numsm"><input type="text" value="19" data-toggle="tooltip" title="You can change this number by simply clicking on it and typing in a new one."></input></div>
+            <div class="numsm"><input type="text" value="27" data-toggle="tooltip" title="You can change this number by simply clicking on it and typing in a new one."></input></div>
+            <div class="numsm"><input type="text" value="34" data-toggle="tooltip" title="You can change this number by simply clicking on it and typing in a new one."></input></div>
+            <div class="numsm pbsm"><input type="text" value="10" data-toggle="tooltip" title="You can change this number by simply clicking on it and typing in a new one."></input></div>
+          </div>
+        </div>
         <div class="pb-buttons">
           <button id="btnGet" type="button" class="btn btn-danger">Get Started!</button>
           <button id="btnClear" type="button" class="btn btn-info">Start Over</button>
         </div>
-
         <div id="demo">
           <h3>Your Numbers</h3>
           <div id="numgroup">

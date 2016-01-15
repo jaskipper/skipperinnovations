@@ -47,8 +47,8 @@ button:hover {
 }
 .pb-buttons {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #pb-container {
   display: block;
@@ -70,6 +70,56 @@ button:hover {
   width: 100px;
   font-weight: bold;
 }
+#num-to-match {
+  color: $gray-light2;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: .5px solid $gray-light;
+  border-top: .5px solid $gray-light;
+  line-height: 20px;
+  text-align: center;
+}
+.numsm {
+  //float: left;
+  display: inline-block;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+  font-weight: bold;
+  background-color: $gray-light3;
+  line-height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: $gray-base;
+  font-size: 11px;
+  input {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: none;
+    background-color: transparent;
+  }
+}
+.numsm:nth-of-type(6) {
+  margin-right: 0;
+}
+.pbsm {
+  background-color: red;
+  color: $gray-lighter;
+}
+#share-results {
+  margin-top: 15px;
+}
+#matches {
+  margin-bottom: 10px;
+}
+.matchesnotification {
+  margin-bottom: 10px;
+}
 #results {
   max-height: 400px;
   overflow: scroll;
@@ -77,17 +127,9 @@ button:hover {
     margin-right: 5px;
     width: 20px;
     display: inline-block;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 2px;
   }
-}
-#share-results {
-  margin-top: 15px;
-}
-span.pbNum {
-  color: red;
-}
-#matches {
-  margin-bottom: 10px;
-}
-.matchesnotification {
-  margin-bottom: 10px;
+
 }
