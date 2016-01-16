@@ -31,3 +31,13 @@ function excerpt_more() {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+/**
+* Filter allowed origins
+*/
+function allowed_sites() {
+  $sites = array('*');
+  return $sites;
+}
+
+add_filter('allowed_http_origins', __NAMESPACE__ . '\\allowed_sites' );
