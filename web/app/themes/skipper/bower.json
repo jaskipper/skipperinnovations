@@ -10,9 +10,9 @@
     "bootstrap-sass": "3.3.6",
     "font-awesome": "~4.5.0",
     "social-sharing": "https://github.com/cferdinandi/social-sharing.git#~1.7.2",
-    "social-feed": "~0.1.2",
     "animate.css": "~3.5.1",
-    "jquery-number": "jquery-number#~2.1.6"
+    "jquery-number": "jquery-number#~2.1.6",
+    "social-feed": "~0.1.2"
   },
   "overrides": {
     "social-sharing": {
@@ -22,11 +22,11 @@
     },
     "social-feed": {
       "main": [
+        "./js/jquery.socialfeed.js",
         "./css/jquery.socialfeed.css",
-        "../codebird-js/codebird.js",
         "../doT/doT.min.js",
-        "../moment/min/moment.min.js",
-        "./js/jquery.socialfeed.js"
+        "../codebird-js/codebird.js",
+        "../moment/min/moment.min.js"
       ]
     },
     "bootstrap-sass": {
@@ -35,7 +35,6 @@
         "./assets/javascripts/bootstrap/transition.js",
         "./assets/javascripts/bootstrap/alert.js",
         "./assets/javascripts/bootstrap/button.js",
-        "./assets/javascripts/bootstrap/carousel.js",
         "./assets/javascripts/bootstrap/collapse.js",
         "./assets/javascripts/bootstrap/dropdown.js",
         "./assets/javascripts/bootstrap/modal.js",

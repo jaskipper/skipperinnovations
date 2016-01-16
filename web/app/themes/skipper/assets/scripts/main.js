@@ -74,7 +74,7 @@
                   // FACEBOOK
                   facebook:{
                       accounts: ['@skipperinnovations','!skipperinnovations'],  //Array: Specify a list of accounts from which to pull wall posts
-                      limit: 3,                                   //Integer: max number of posts to load
+                      limit: 5,                                   //Integer: max number of posts to load
                       access_token: '1709949575893557|00462da5d6e4c37442794ecea8d30843'  //String: "APP_ID|APP_SECRET"
                   },
                   // GOOGLEPLUS
@@ -99,7 +99,7 @@
                   // INSTAGRAM
                   instagram: {
                       accounts: ['@jasonaskipper'],
-                      limit: 3,
+                      limit: 5,
                       client_id: '',
                       access_token: '36291383.1677ed0.bcf5591964a34a7a80072831c68b695e'
                   },
@@ -240,7 +240,7 @@
             }
             //if all went well, there are no duplicates
             duptest = "no";
-            console.log("Your # is: " + thisnum);
+            //console.log("Your # is: " + thisnum);
             //return duptest;
           }
 
@@ -269,7 +269,6 @@
             for (i = 0; i < 5; i++) {
               thistext = $(".numsm:nth-of-type(" + (i + 1) + ") input").val();
               thistext = parseInt(thistext);
-              console.log(thistext);
               actualResults.push(thistext);
             }
 

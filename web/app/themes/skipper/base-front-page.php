@@ -87,7 +87,7 @@ use Roots\Sage\Wrapper;
                    data-ad-format="auto"></ins>
               <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
+            </script>
             </div>
           </div>
         </div>
