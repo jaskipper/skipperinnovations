@@ -1,10 +1,10 @@
-<div class="sbshare ">
+<!--<div class="sbshare ">
   <div class="row">
     <div class="col-sm-12 hidden-xs">
       <?php get_template_part('templates/socialshare'); ?>
     </div>
   </div>
-</div>
+</div>-->
 <h3>Sponsored Links</h3>
 <div class="sbadds">
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
