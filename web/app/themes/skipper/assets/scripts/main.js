@@ -230,7 +230,7 @@
             //this loops through each number and compares it with the next one. If there is a duplicate, it changes that number and then breaks out. Then this function is repeated/called again until all duplicates are gone.
             for (i = 0; i < thisnum.length - 1; i++) {
               if (thisnum[i + 1] === thisnum[i]) {
-                console.log("Uh oh, There's a Duplicate! [" + thisnum + "] Fixing...");
+                //console.log("Uh oh, There's a Duplicate! [" + thisnum + "] Fixing...");
                 thisnum[i] = getRandomNumber(69);
                 duptest = "duplicate";
                 //return duptest;
@@ -342,58 +342,74 @@
           //The Function that runs in pushing the get numbers button
           $("#btnGet").click(function()/*{function getNumbers() */{
 
-              totalTries = totalTries + 1;
-              $("#tries").html(totalTries);
-              totalSpent = totalTries * 2;
-              $("#tspent").html(totalSpent);
+              function repeat() {
 
-              //change the text to "Get More" and show the "Clear" button
-              $("#btnGet").html("Get More");
-              $("#btnClear").css("display", "inline-block");
+                totalTries = totalTries + 1;
+                $("#tries").html(totalTries);
+                totalSpent = totalTries * 2;
+                $("#tspent").html(totalSpent);
 
-              //setup the variable array for our 5 numbers
-              var thisnum = [];
+                //change the text to "Get More" and show the "Clear" button
+                $("#btnGet").html("Get More");
+                $("#btnClear").css("display", "inline-block");
 
-              //get the 5 numbers
-              for (i = 0; i < 5; i++) {
-                thisnum.push( getRandomNumber(69) );
+                //setup the variable array for our 5 numbers
+                var thisnum = [];
+
+                //get the 5 numbers
+                for (i = 0; i < 5; i++) {
+                  thisnum.push( getRandomNumber(69) );
+                }
+
+                //Send the array off to sort and to check on duplicates. If there are duplicicates send it off again until it returns with no duplicates.
+                do {
+                  sortandcompare(thisnum);
+                } while ( duptest === "duplicate" );
+
+                //print out the first 5 numbers
+                for (i = 0; i < 5; i++) {
+                  $("#num" + (i + 1) + " span").html( thisnum[i] );
+                }
+
+                //get the random powerball whole number
+                var pb = getRandomNumber(26);
+                //print out the powerball number
+                $(".pb span").html(pb);
+
+                //Check to see if we already had some results and if so post them
+                if (holdResults !== "") {
+                  $("#myResults h3").html("Previous Results:");
+                  //I want the last numbers to show up on the top of the list, pushing everything else down. That's why we are adding "prepend".
+                  $("#results").prepend(getPrevRes() + holdWbMatches + holdPbMatches + "<br>");
+                }
+
+                testActualResults(thisnum, pb);
+
+                getWinnings(numMatches,pbMatch);
+                totalWon = totalWon + thisWon;
+                $("#twon").html(totalWon);
+
+                //hold the 5 number array and the powerball number
+                holdResults = thisnum;
+                holdPb = pb;
+                holdWbMatches = wbMatches;
+                holdPbMatches = pbMatches;
+                $(".number").number(true, 2);
+                $(".number").prepend("$");
+
               }
+              //var RepeatNumber = 500;
+              //$('body').css('cursor', 'progress');
+              //for ( i = 0; i < RepeatNumber; i++) {
+                //setTimeout(repeat, 500);
+                //(function() {
+                  setTimeout(repeat, 010);
+                 //})(i);
+                    //if (i === (RepeatNumber - 1) ) {
+                      //$('body').css('cursor', 'auto');
+                    //}
+              //}
 
-              //Send the array off to sort and to check on duplicates. If there are duplicicates send it off again until it returns with no duplicates.
-              do {
-                sortandcompare(thisnum);
-              } while ( duptest === "duplicate" );
-
-              //print out the first 5 numbers
-              for (i = 0; i < 5; i++) {
-                $("#num" + (i + 1) + " span").html( thisnum[i] );
-              }
-
-              //get the random powerball whole number
-              var pb = getRandomNumber(26);
-              //print out the powerball number
-              $(".pb span").html(pb);
-
-              //Check to see if we already had some results and if so post them
-              if (holdResults !== "") {
-                $("#myResults h3").html("Previous Results:");
-                //I want the last numbers to show up on the top of the list, pushing everything else down. That's why we are adding "prepend".
-                $("#results").prepend(getPrevRes() + holdWbMatches + holdPbMatches + "<br>");
-              }
-
-              testActualResults(thisnum, pb);
-
-              getWinnings(numMatches,pbMatch);
-              totalWon = totalWon + thisWon;
-              $("#twon").html(totalWon);
-
-              //hold the 5 number array and the powerball number
-              holdResults = thisnum;
-              holdPb = pb;
-              holdWbMatches = wbMatches;
-              holdPbMatches = pbMatches;
-              $(".number").number(true, 2);
-              $(".number").prepend("$");
           });
 
 

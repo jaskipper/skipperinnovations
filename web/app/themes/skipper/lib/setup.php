@@ -16,8 +16,8 @@ function setup() {
   add_theme_support('soil-jquery-cdn');
   //add_theme_support('soil-relative-urls');
 
-  //Google Analytics (more info)
-  add_theme_support('soil-google-analytics', 'UA-71298311-1');
+  //Google Analytics (more info) (Using PIWIK)
+  //add_theme_support('soil-google-analytics', 'UA-71298311-1');
 
   //Move all JS to the footer
   add_theme_support('soil-js-to-footer');

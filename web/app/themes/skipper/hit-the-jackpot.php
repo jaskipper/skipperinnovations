@@ -66,7 +66,7 @@
           <div class="row">
             <div class="col-sm-6 col-xs-12">
               <div class="clearfix">
-                <div class="title">Total Tries: </div><span id="tries">0</span>
+                <div class="title">Total Tickets: </div><span id="tries">0</span>
               </div>
               <div class="clearfix">
                 <div class="title">Total Spent: </div><span id="tspent" class="number">$0.00</span>
