@@ -113,9 +113,19 @@ body.admin-bar {
     content: '\f16a';
   }
   .menu-english a:before {
-    content: url(/app/themes/skipper/assets/flag-icon-css/flags/4x3/es.svg);
+    content: "";
+    background: url(../images/us.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 7px;
+    background-color: rgba(43, 42, 42, .5);
   }
   .menu-espanol a:before {
-    content: url(/app/themes/skipper/assets/flag-icon-css/flags/4x3/en.svg);
+    content: "";
+    background: url(../images/es.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 7px;
+    background-color: rgba(43, 42, 42, .5);
   }
 }

@@ -12,8 +12,7 @@
     "social-sharing": "https://github.com/cferdinandi/social-sharing.git#~1.7.2",
     "animate.css": "~3.5.1",
     "jquery-number": "jquery-number#~2.1.6",
-    "social-feed": "~0.1.2",
-    "flag-icon-css": "^1.2.0"
+    "social-feed": "~0.1.2"
   },
   "overrides": {
     "social-sharing": {
