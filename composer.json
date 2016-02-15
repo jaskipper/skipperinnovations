@@ -47,7 +47,8 @@
     "roots/soil": "dev-trunk",
     "wpackagist-plugin/wp-retina-2x": ">=4.4.1",
     "wpackagist-plugin/polylang": ">=1.8.1",
-    "wpackagist-plugin/polylang-option-tree-bridge": "1.0"
+    "wpackagist-plugin/polylang-option-tree-bridge": "1.0",
+    "wpackagist-plugin/option-tree": "2.6.0"
   },
   "extra": {
     "installer-paths": {

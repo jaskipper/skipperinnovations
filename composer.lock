@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "839c98da2cf7298e3a7f105c5ad329ea",
-    "content-hash": "adbe0ea7d6d91dadb3d951a356fe3121",
+    "hash": "cdbd951888a224eaaee0754e8072e05d",
+    "content-hash": "a875c51cea30d3f04eee59919656a5a4",
     "packages": [
         {
             "name": "composer/installers",
@@ -362,6 +362,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ninja-forms/"
+        },
+        {
+            "name": "wpackagist-plugin/option-tree",
+            "version": "2.6.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/option-tree/",
+                "reference": "tags/2.6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/option-tree.2.6.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/option-tree/"
         },
         {
             "name": "wpackagist-plugin/polylang",
