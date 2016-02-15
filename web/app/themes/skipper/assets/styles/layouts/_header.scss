@@ -113,9 +113,9 @@ body.admin-bar {
     content: '\f16a';
   }
   .menu-english a:before {
-    content: 'url(/app/themes/skipper/assets/flag-icon-css/flags/4x3/es.svg)';
+    content: url(/app/themes/skipper/assets/flag-icon-css/flags/4x3/es.svg);
   }
   .menu-espanol a:before {
-    content: 'url(/app/themes/skipper/assets/flag-icon-css/flags/4x3/en.svg)';
+    content: url(/app/themes/skipper/assets/flag-icon-css/flags/4x3/en.svg);
   }
 }
