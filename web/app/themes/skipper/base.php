@@ -2,7 +2,7 @@
 
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
- 
+
 ?>
 
 <!doctype html>
@@ -40,7 +40,7 @@ use Roots\Sage\Wrapper;
 
     <section id="baselanding" class="" style="background-image: url('<?php echo get_theme_mod('header_bg_image') ?>');">
       <div id="skipperlogo">
-        <img src="<?php echo get_header_image(); ?>" width="650px">
+        <a href="/"><img src="<?php echo get_header_image(); ?>" width="650px"></a>
       </div>
     </section>
 
