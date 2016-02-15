@@ -90,6 +90,9 @@ body.admin-bar {
           background: rgba(0, 0, 0, 0.75);
       }
     }
+    .nav>li>a:focus, .nav>li>a:hover {
+      background-color: transparent;
+    }
   }
   .menu-facebook a:before {
     content: '\f09a';
@@ -97,8 +100,14 @@ body.admin-bar {
   .menu-twitter a:before {
     content: '\f099';
   }
+  .menu-google-plus a:before {
+    content: '\f0d5';
+  }
   .menu-googleplus a:before {
     content: '\f0d5';
+  }
+  .menu-instagram a:before {
+    content: '\f16d';
   }
   .menu-linkedin a:before {
     content: '\f0e1';
