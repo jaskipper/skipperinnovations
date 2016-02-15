@@ -5,6 +5,7 @@
     </div>
   </div>
 </div>-->
+<?php dynamic_sidebar('sidebar-primary'); ?>
 <h3>Sponsored Links</h3>
 <div class="sbadds">
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -20,4 +21,3 @@
 </div>
 <h3 class="socialh3">Social Media</h3>
 <div id="fp-social" class="social-feed-container"></div>
-<?php dynamic_sidebar('sidebar-primary'); ?>
