@@ -12,21 +12,7 @@
           <span>Menu</span>
         </div>
         <div id="skipperbrand" class="navbar-toggle">
-          <a <?php if ( is_front_page() ) { echo 'href="#" class="sk-smoothscroll"'; } else { echo 'href="/"'; } ?> data-target="body"><img src="
-
-            <?php
-
-              $lang=get_bloginfo("language");
-              if($lang == 'es')
-                { //es
-                  echo get_es_header_image();
-                }
-              else
-                { //show English logo
-                  echo get_header_image();
-                }
-            ?>
-            "></a>
+          <a <?php if ( is_front_page() ) { echo 'href="#" class="sk-smoothscroll"'; } else { echo 'href="/"'; } ?> data-target="body"><img src="<?php echo get_header_image(); ?>"></a>
         </div>
       </div>
       <div class="collapse navbar-collapse">

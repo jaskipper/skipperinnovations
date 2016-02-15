@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cdbd951888a224eaaee0754e8072e05d",
-    "content-hash": "a875c51cea30d3f04eee59919656a5a4",
+    "hash": "acb5f707d2f725894542c5563b57811c",
+    "content-hash": "5c336b0af7f1335ee00391ae98a66a45",
     "packages": [
         {
             "name": "composer/installers",
@@ -362,66 +362,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ninja-forms/"
-        },
-        {
-            "name": "wpackagist-plugin/option-tree",
-            "version": "2.6.0",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/option-tree/",
-                "reference": "tags/2.6.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/option-tree.2.6.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/option-tree/"
-        },
-        {
-            "name": "wpackagist-plugin/polylang",
-            "version": "1.8.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/polylang/",
-                "reference": "tags/1.8.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/polylang.1.8.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/polylang/"
-        },
-        {
-            "name": "wpackagist-plugin/polylang-option-tree-bridge",
-            "version": "1.0",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/polylang-option-tree-bridge/",
-                "reference": "tags/1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/polylang-option-tree-bridge.1.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/polylang-option-tree-bridge/"
         },
         {
             "name": "wpackagist-plugin/shortcodes-ultimate",
