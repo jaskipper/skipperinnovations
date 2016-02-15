@@ -4,6 +4,7 @@ web/app/plugins/*
 web/app/mu-plugins/*/
 !web/app/mu-plugins/skipper*/
 !web/app/mu-plugins/wpml*/
+!web/app/mu-plugins/sitepress-multilingual*/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
