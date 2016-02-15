@@ -3,8 +3,8 @@ web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
 !web/app/mu-plugins/skipper*/
-!web/app/mu-plugins/wpml*/
-!web/app/mu-plugins/sitepress-multilingual*/
+!web/app/plugins/wpml*/
+!web/app/plugins/sitepress-multilingual*/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
