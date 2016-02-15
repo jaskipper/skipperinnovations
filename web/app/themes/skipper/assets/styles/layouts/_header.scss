@@ -58,9 +58,6 @@ body.admin-bar {
   position:relative;
   float:right;
   margin-bottom:0;
-  .nav>li>a:focus, .nav>li>a:hover {
-    background-color: transparent;
-  }
   @media screen and (max-width: 767px) {
     float: left;
     li {
