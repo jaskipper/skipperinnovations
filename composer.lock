@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7c972f62796a4d407f07be9bd62a2ebc",
-    "content-hash": "16f3e984833580e6b835ead8febfc4c2",
+    "hash": "839c98da2cf7298e3a7f105c5ad329ea",
+    "content-hash": "adbe0ea7d6d91dadb3d951a356fe3121",
     "packages": [
         {
             "name": "composer/installers",
@@ -382,6 +382,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/polylang/"
+        },
+        {
+            "name": "wpackagist-plugin/polylang-option-tree-bridge",
+            "version": "1.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/polylang-option-tree-bridge/",
+                "reference": "tags/1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang-option-tree-bridge.1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/polylang-option-tree-bridge/"
         },
         {
             "name": "wpackagist-plugin/shortcodes-ultimate",

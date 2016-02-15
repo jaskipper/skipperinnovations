@@ -46,7 +46,8 @@
     "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags": ">=1.6.3",
     "roots/soil": "dev-trunk",
     "wpackagist-plugin/wp-retina-2x": ">=4.4.1",
-    "wpackagist-plugin/polylang": ">=1.8.1"
+    "wpackagist-plugin/polylang": ">=1.8.1",
+    "wpackagist-plugin/polylang-option-tree-bridge": "1.0"
   },
   "extra": {
     "installer-paths": {
