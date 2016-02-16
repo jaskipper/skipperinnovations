@@ -1,0 +1,12 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_mods_skipper">
+			<key name="fp_description"/>
+			<key name="header_image"/>
+		</key>
+		<key name="fp_description"/>
+		<key name="widget_skipper_fp_widget">
+			<key name="_multiwidget"/>
+		</key>
+	</admin-texts>
+</wpml-config>
