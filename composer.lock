@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "acb5f707d2f725894542c5563b57811c",
-    "content-hash": "5c336b0af7f1335ee00391ae98a66a45",
+    "hash": "b534e1dc83895ff006981231eb81ff67",
+    "content-hash": "a9c0636372b0fdca3fc1d7b8eaa503b9",
     "packages": [
         {
             "name": "composer/installers",
@@ -362,6 +362,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ninja-forms/"
+        },
+        {
+            "name": "wpackagist-plugin/page-scroll-to-id",
+            "version": "1.6.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/page-scroll-to-id/",
+                "reference": "tags/1.6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/page-scroll-to-id.1.6.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/page-scroll-to-id/"
         },
         {
             "name": "wpackagist-plugin/shortcodes-ultimate",

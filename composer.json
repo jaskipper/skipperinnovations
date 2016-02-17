@@ -45,7 +45,8 @@
     "wpackagist-plugin/ninja-forms": ">=2.9.29",
     "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags": ">=1.6.3",
     "roots/soil": "dev-trunk",
-    "wpackagist-plugin/wp-retina-2x": ">=4.4.1"
+    "wpackagist-plugin/wp-retina-2x": ">=4.4.1",
+    "wpackagist-plugin/page-scroll-to-id": "1.6.0"
   },
   "extra": {
     "installer-paths": {
