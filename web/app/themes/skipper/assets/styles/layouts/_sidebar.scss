@@ -16,10 +16,18 @@
     border-bottom: none;
     padding-bottom: 0px;
   }
+  .widget {
+    margin-bottom: 30px;
+  }
 }
 .whatido {
   color: $gray-light;
   text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  .skipperbgs {
+    font-size: 13px;
+  }
   .fa {
     text-align: center;
     border-radius: 50%;
@@ -30,5 +38,22 @@
     width: 120px;
     height: 120px;
     line-height: 120px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .fa {
+      font-size: 30px;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .whatido {
+    .skipperbgs {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 12px;
+    }
   }
 }

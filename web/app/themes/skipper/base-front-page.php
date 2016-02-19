@@ -75,11 +75,10 @@ use Roots\Sage\Wrapper;
           <?php //dynamic_sidebar( 'sidebar-social' ); ?>
           <h2>Social Media</h2>
           <div id="fp-social" class="social-feed-container"></div>
-          <div id="fpads">
+          <!-- <div id="fpads">
             <h2>Sponsored Links</h2>
             <div id="fp-sponsored-links" >
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <!-- skipperinnovations -->
               <ins class="adsbygoogle"
                    style="display:block"
                    data-ad-client="ca-pub-8170675797595742"
@@ -88,8 +87,8 @@ use Roots\Sage\Wrapper;
               <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-            </div>
           </div>
+          </div>-->
         </div>
       </div>
     </section>
