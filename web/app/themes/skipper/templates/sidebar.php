@@ -6,10 +6,9 @@
   </div>
 </div>-->
 <?php dynamic_sidebar('sidebar-primary'); ?>
-<h3>Sponsored Links</h3>
+<!--<h3>Sponsored Links</h3>
 <div class="sbadds">
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- skipperinnovations -->
   <ins class="adsbygoogle"
        style="display:block"
        data-ad-client="ca-pub-8170675797595742"
@@ -18,6 +17,6 @@
   <script>
   (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
-</div>
+</div>-->
 <h3 class="socialh3">Social Media</h3>
 <div id="fp-social" class="social-feed-container"></div>
