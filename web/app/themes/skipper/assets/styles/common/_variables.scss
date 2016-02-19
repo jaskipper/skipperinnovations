@@ -13,6 +13,7 @@ $brand-primary:         #27ae60;
 $gray-base:             #000;
 $gray-light2:           lighten($gray-base, 60%);
 $gray-light3:           lighten($gray-base, 78%);
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
 
 $navbar-inverse-bg:     rgba(9, 9, 9, 0.78);
 // Inverted navbar links
@@ -24,3 +25,10 @@ $navbar-inverse-link-active-bg:             lighten($navbar-inverse-bg, 15%);
 
 //Padding Between Sections
 $section-spacing:       60px;
+
+//Other Colors
+$skipper-yellow:        #FED446;
+$skipper-orange:        #FF6633;
+$skipper-purple:        #825982;
+$skipper-palegreen:     #578080;
+$skipper-palered:       #AA3C39;

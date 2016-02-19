@@ -10,6 +10,42 @@ h1 {
 .brand-primary {
   color: $brand-primary;
 }
+.skipper-yellow {
+  background-color: $skipper-yellow;
+  &:hover {
+    background-color: darken($skipper-yellow, 15%)
+  }
+}
+.skipper-palegreen {
+  background-color: $skipper-palegreen;
+  &:hover {
+    background-color: darken($skipper-palegreen, 15%)
+  }
+}
+.skipper-orange {
+  background-color: $skipper-orange;
+  &:hover {
+    background-color: darken($skipper-orange, 15%)
+  }
+}
+.skipper-purple {
+  background-color: $skipper-purple;
+  &:hover {
+    background-color: darken($skipper-purple, 15%)
+  }
+}
+.skipper-gray {
+  background-color: $gray-light;
+  &:hover {
+    background-color: darken($gray-light, 15%)
+  }
+}
+.skipper-palered {
+  background-color: $skipper-palered;
+  &:hover {
+    background-color: darken($skipper-palered, 15%)
+  }
+}
 .alignleft, .alignright {
   /* Portrait */
   @media only screen
