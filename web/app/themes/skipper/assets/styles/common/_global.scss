@@ -18,6 +18,8 @@ h1 {
 }
 .skipper-palegreen {
   background-color: $skipper-palegreen;
+  color: white;
+  list-style-type: none;
   &:hover {
     background-color: darken($skipper-palegreen, 15%)
   }
