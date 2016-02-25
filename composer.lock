@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b534e1dc83895ff006981231eb81ff67",
-    "content-hash": "a9c0636372b0fdca3fc1d7b8eaa503b9",
+    "hash": "fff438a808bc892d14a8c5c371f16913",
+    "content-hash": "8158f69ad6362c1978ed85b6fe64bb07",
     "packages": [
         {
             "name": "composer/installers",
@@ -284,6 +284,27 @@
             "time": "2015-12-29 15:10:30"
         },
         {
+            "name": "wpackagist-plugin/all-in-one-seo-pack",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/all-in-one-seo-pack/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/all-in-one-seo-pack/",
+            "time": "2016-02-24 19:41:51"
+        },
+        {
             "name": "wpackagist-plugin/database-sync",
             "version": "0.5.1",
             "source": {
@@ -468,7 +489,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "roots/soil": 20
+        "roots/soil": 20,
+        "wpackagist-plugin/all-in-one-seo-pack": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
