@@ -20,7 +20,7 @@ use Roots\Sage\Wrapper;
     ?>
     <section id="landing" class="cover" style="background-image: url('<?php echo get_theme_mod('header_bg_image') ?>');">
       <div id="skipperlogo">
-        <a href="#" class="sk-smoothscroll" data-target="body"><img src="<?php echo get_header_image(); ?>"></a>
+        <a href="#" class="sk-smoothscroll" data-target="body"><img src="<?php echo get_header_image(); ?>" alt="Skipper Innovations Logo - Premium Web Design| Audio/Video/Lighting Solutions"></a>
       </div>
 
       <div id="fpnext">
