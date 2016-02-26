@@ -34,7 +34,8 @@ use Roots\Sage\Wrapper;
         <div class="skipperfptitle">
           <h1>Premium Web Design & Audio/Video/Lighting Solutions for your Church or Business</h1>
         </div>
-        <?php echo get_option('fp_description','Nothing') ?>
+        <?php //echo get_option('fp_description','Nothing') ?>
+        I am a Bilingual (English/Spanish) Freelance Web Designer and Audio Engineer. I'm passionate about helping Churches and Businesses grow, reach and make an impact in their communities through powerful audio/visual environments and a strategic online presence.
       </div>
     </section>
 
@@ -43,8 +44,60 @@ use Roots\Sage\Wrapper;
         <div class="container">
           <div class="row">
 
-              <?php dynamic_sidebar( 'sidebar-fp-widgets' ); ?>
+            <?php //dynamic_sidebar( 'sidebar-fp-widgets' ); ?>
 
+            <section class="widget skipper_fp_widget-7 widget_skipper_fp_widget">
+              <aside id="fptext_widget-info" class="col-md-3 col-sm-3 skipper-text-widget">
+                <a href="/Skipper" class="aglyph" data-target=""><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                <h3 class="home-widget-title"><a href="/skipper">About Me</a></h3>
+                <div class="textwidget">
+                  Learn about me (Jason Skipper) and my experience over the years in missions, multiple church plants, technology, business and @ Apple!          </div>
+                <a href="/Skipper" class="btn btn-info btn-lg" data-target="">
+                  Learn More
+                </a>
+              </aside>
+            </section>
+            <section class="widget skipper_fp_widget-8 widget_skipper_fp_widget">
+              <aside id="fptext_widget-danger" class="col-md-3 col-sm-3 skipper-text-widget">
+                <a href="/website-development-design/" class="aglyph
+                  " data-target=""><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></a>
+                <h3 class="home-widget-title"><a href="/skipper">What I Do</a></h3>
+                <div class="textwidget">
+                  Many things! Web Development/Design, Sound, Lighting, and more. My goal is to help you touch lives through the creative use of technology.          </div>
+                <a href="/website-development-design/" class="btn
+                  btn-danger            btn-lg
+                  " data-target="">
+                  Learn More
+                </a>
+              </aside>
+            </section>
+            <section class="widget skipper_fp_widget-9 widget_skipper_fp_widget">
+              <aside id="fptext_widget-warning" class="col-md-3 col-sm-3 skipper-text-widget">
+                <a href="#" class="aglyph
+                  sk-smoothscroll" data-target="#fp-social"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></a>
+                <h3 class="home-widget-title"><a href="/skipper">Blog</a></h3>
+                <div class="textwidget">
+                  Read my Blog where I share my thoughts, ideas, experience, secrets, rants and everything else about business, ministry, life and technology!          </div>
+                <a href="#" class="btn
+                  btn-warning            btn-lg
+                  sk-smoothscroll" data-target="#fp-social">
+                  Read Now          </a>
+              </aside>
+            </section>
+            <section class="widget skipper_fp_widget-10 widget_skipper_fp_widget">
+              <aside id="fptext_widget-success" class="col-md-3 col-sm-3 skipper-text-widget">
+                <a href="/contact" class="aglyph
+                  " data-target=""><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+                <h3 class="home-widget-title"><a href="/skipper">Contact</a></h3>
+                <div class="textwidget">
+                  Maximize the impact that your church or business has on this world. Let me know your dream, and I'll help you find a solution! Call or E-mail me today!          </div>
+                <a href="/contact" class="btn
+                  btn-success            btn-lg
+                  " data-target="">
+                  Contact Us!
+                </a>
+              </aside>
+            </section>
           </div>
         </div>
       </div>
@@ -98,7 +151,53 @@ use Roots\Sage\Wrapper;
 
     <?php
       do_action('get_footer');
-      get_template_part('templates/footer');
+      //get_template_part('templates/footer');?>
+      <footer class="content-info">
+        <div class="container">
+          <div class="row">
+            <section class="widget text-2 widget_text col-sm-4 col-md-4"><h3>About</h3>
+              <div class="textwidget"><img style="float: left; padding-right: 5px; padding-bottom: 5px" width="100" height="94" src="/app/uploads/2014/05/DSC_0076-1-300x281.jpg" class="attachment-medium size-medium" alt="DSC_0076 (1)">Having been missionaries in Bolivia for 15 years and planted two tremendously successful churches there, Jason Skipper and his family now live in Rome, GA where they are working with another world changing church, "<a href="http://www.journeyrome.com" target="blank">Journey</a>". Jason is a successful entrepreneur, organization builder and church planter, and has gained extensive knowledge and experience over the years in all things tech. Jason is an Apple Certified Technician and Trainer, and is an extremely talented web designer/developer and Sound Engineer.</div>
+      		  </section>
+            <section class="widget text-5 widget_text col-sm-4 col-md-4"><h3>Links</h3>
+              <div class="textwidget"><p>Below are some websites that are useful or meaningful to me in some way.</p>
+                <ul>
+                  <li><a target="_blank" data-toggle="tooltip" title="" href="http://www.journeyrome.com" data-original-title=" The website of the Church that we pastor at in Rome, GA">Journey Church of Rome, GA</a></li>
+                  <li><a target="_blank" data-toggle="tooltip" title="" href="http://es.journeyrome.com" data-original-title=" El sitio web de nuestra Iglesia en Español en Rome, GA">Journey en Español - Rome, GA</a></li>
+                  <li><a target="_blank" data-toggle="tooltip" title="" href="https://www.hohnet.com" data-original-title="Our Mission's Organization">The Hand of Hur</a></li>
+                  <li><a target="_blank" data-toggle="tooltip" title="" href="http://www.skipperstrings.com" data-original-title="My Dad, Roger Skipper's Business website.">Skipper Custom Instruments</a></li>
+                  <li><a target="_blank" data-toggle="tooltip" title="" href="https://www.facebook.com/norahskipper" data-original-title="My Wife Norah's Facebook Page">Norah's Facebook Page</a></li>
+                  <li><a target="_blank" data-toggle="tooltip" title="" href="https://www.youtube.com/user/eebeeproductions/videos" data-original-title="Erynn's (my daughter) Youtube Channel">Erynn &amp; Bella's YouTube Channel</a></li>
+                  <li><a target="_blank" data-toggle="tooltip" title="" href="https://www.youtube.com/channel/UCubhwe8_rhKrDu_PjSHBXAQ" data-original-title="Jordan's (my son) Youtube Channel">Jordan's YouTube Channel</a></li>
+                </ul>
+                <div class="clearfix">
+                  <ul id="menu-social-items" class="nav navbar-nav menu-item"><li class="menu-item menu-twitter"><a target="_blank" href="http://www.twitter.com/jasonaskipper"><span class="sr-only">Twitter</span></a></li>
+                    <li class="menu-item menu-facebook"><a target="_blank" href="http://facebook.com/jasonaskipper"><span class="sr-only">Facebook</span></a></li>
+                    <li class="menu-item menu-instagram"><a target="_blank" href="http://www.instagram.com/jasonaskipper"><span class="sr-only">Instagram</span></a></li>
+                    <li class="menu-item menu-google-plus"><a target="_blank" href="https://plus.google.com/+JasonSkipperImpact/"><span class="sr-only">Google Plus</span></a></li>
+                    <li class="menu-item menu-youtube"><a target="_blank" href="https://www.youtube.com/user/jasonaskipper"><span class="sr-only">YouTube</span></a></li>
+                    <li class="menu-item menu-linkedin"><a target="_blank" href="http://www.linkedin.com/in/jasonaskipper/"><span class="sr-only">LinkedIn</span></a></li>
+                  </ul>
+                </div>
+              </div>
+      		  </section>
+            <section class="widget text-3 widget_text col-sm-4 col-md-4"><h3>Contact Us!</h3>
+              <div class="textwidget"><img src="/app/uploads/2016/02/SkipperInnovationsWebDesign.png" alt="" width="100%">
+                <p>3 Foliage Way NE<br>
+                Rome, GA  30165</p>
+                <p><a href="mailto: jason@skipperinnovations.com" class="encrypted-email">jason@skipperinnovations.com</a>
+                  <br>
+                  615-900-0757
+                </p>
+              </div>
+      		  </section>
+          </div>
+          <div id="copyright" class="row">
+            <p class="col-md-6 col-sm-6">Copyright © 2016 - <a href="https://skipperinnovations.com">Skipper Innovations</a> <i><a href="/privacy-policy"> (Privacy Policy)</a></i></p>
+            <p class="col-md-6 col-sm-6 copy-right"><span class="glyphicon glyphicon-leaf brand-primary" aria-hidden="true"></span> Skipper Theme - Designed by <a href="https://www.facebook.com/jasonaskipper" target="_blank">Jason Skipper</a></p>
+          </div>
+        </div>
+      </footer>
+      <?php
       wp_footer();
     ?>
     <!-- Piwik -->
