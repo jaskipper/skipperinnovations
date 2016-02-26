@@ -31,6 +31,9 @@ use Roots\Sage\Wrapper;
 
     <section id="fpdescription" class="">
       <div class="container desc">
+        <div class="skipperfptitle">
+          <h1>Premium Web Design & Audio/Video/Lighting Solutions for your Church or Business</h1>
+        </div>
         <?php echo get_option('fp_description','Nothing') ?>
       </div>
     </section>
