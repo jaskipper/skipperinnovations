@@ -20,10 +20,6 @@
       init: function() {
         // JavaScript to be fired on all pages
 
-        function footerlogoheight() {
-          logowidth = $('.footerlogo').width();
-          $('.footerlogo').height(logowidth*0.2);
-        }
         function scrollTo(selector){
             myoffset = $('#wpadminbar').height() + $('.navbar-fixed-top').height();
             console.log(myoffset);
@@ -61,6 +57,11 @@
 
         $(document).ready(function () {
 
+          function footerlogoheight() {
+            logowidth = $('.footerlogo').width();
+            $('.footerlogo').height(logowidth*0.2);
+          }
+
           $(window).scroll(function(){
               showbranding();
           });
@@ -69,6 +70,8 @@
               showbranding();
               footerlogoheight();
           });
+
+          footerlogoheight();
 
           //Social Feed
           var updateFeed = function() {
@@ -137,9 +140,6 @@
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
-
-        footerlogoheight();
-
       }
     },
     // Home
