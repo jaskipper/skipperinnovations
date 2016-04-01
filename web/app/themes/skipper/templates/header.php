@@ -36,7 +36,7 @@
             'after'           => '',
             'link_before'     => '<span class="sr-only">',
             'link_after'      => '</span>',
-            'items_wrap'      => '<ul id="%1$s" class="%2$s menu-item">%3$s</ul>',
+            'items_wrap'      => '<ul id="%1$s" class="%2$s menu-item grow">%3$s</ul>',
             'depth'           => 0,
             'walker'          => ''
           );
