@@ -125,6 +125,7 @@ article.type-post {
 }
 #landing {
 	position: relative;
+  height: 100vh;
 }
 #baselanding {
   height: 300px;
@@ -134,7 +135,9 @@ article.type-post {
     width: 550px;
   }
 }
-
+.no-svg #skipperlogo {
+  background-image: url('../images/SkipperInnovationsWebDesign.png');
+}
 #skipperlogo {
   margin:70px 50px;
   z-index:1;
@@ -142,10 +145,11 @@ article.type-post {
   max-width:75%;
   position:absolute;
   box-sizing: border-box;
-  img {
-    max-width: 100%;
-    height:auto;
-  }
+  background-image: url('../images/SkipperInnovationsWebDesign.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 200px;
+  
   //Making Sure that we also target the iPhone 6 Plus
   @media screen and (max-device-width: 736px) and (orientation: landscape) {
     max-width: 65%;

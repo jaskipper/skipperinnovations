@@ -86,7 +86,7 @@
                   // TWITTER
                   twitter:{
                       accounts: ['@jasonaskipper'],                      //Array: Specify a list of accounts from which to pull tweets
-                      limit: 3,                                   //Integer: max number of tweets to load
+                      limit: 10,                                   //Integer: max number of tweets to load
                       consumer_key: 'DfUEjfcnRDgQYxpwsN4Nhj47e',          //String: consumer key. make sure to have your app read-only
                       consumer_secret: 'KYPHOaLP9i73vhCpM1FR48upO0o7rm2orCeCmkjZKmHUPHeKPo' //String: consumer secret key. make sure to have your app read-only
                   },
@@ -141,11 +141,15 @@
 
         $(document).ready(function () {
 
-          $(window).bind('resizeEnd', function () {
-            var height = window.innerHeight ? window.innerHeight : $(window).height();
-            windowheight = height - $(".logged-in #wpadminbar").height();
-            $("#landing").height(windowheight);
-          });
+          if (Modernizr.cssvhunit) {
+            // supported
+          } else {
+            $(window).bind('resizeEnd', function () {
+              var height = window.innerHeight ? window.innerHeight : $(window).height();
+              windowheight = height - $(".logged-in #wpadminbar").height();
+              $("#landing").height(windowheight);
+            });
+          }
 
           function socialfeedheight() {
               var fpblogheight = $('#fp-blog').height() + $('.fpreadblog').height();
