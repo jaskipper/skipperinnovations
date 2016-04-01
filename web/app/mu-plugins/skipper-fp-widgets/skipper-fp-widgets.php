@@ -67,7 +67,7 @@ class Skipper_FP_Widget extends \WP_Widget {
 
         echo $before_widget; ?>
 
-        <aside id="fptext_widget-<?php if ( ! empty( $instance['widgetcolor'] ) ) { echo $widgetcolor; } ?>" class="col-md-3 col-sm-3 skipper-text-widget">
+        <aside id="fptext_widget-<?php if ( ! empty( $instance['widgetcolor'] ) ) { echo $widgetcolor; } ?>" class="col-md-3 col-sm-3 skipper-text-widget grow">
           <a href="<?php if ( ! empty( $instance['buttonlink'] ) ) { echo $buttonlink; } ?>"
             class="aglyph
             <?php if ( ! empty( $instance['linktargetmode'] ) )
