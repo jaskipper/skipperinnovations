@@ -20,49 +20,48 @@
       init: function() {
         // JavaScript to be fired on all pages
 
+        function footerlogoheight() {
+          logowidth = $('.footerlogo').width();
+          $('.footerlogo').height(logowidth*0.2);
+        }
+        function scrollTo(selector){
+            myoffset = $('#wpadminbar').height() + $('.navbar-fixed-top').height();
+            console.log(myoffset);
+            $('html, body').animate({
+                easing: 'easeInOutCubic',
+                scrollTop: $(selector).offset().top - myoffset
+             }, 1600);
+        }
+
+        $('.sk-smoothscroll').click(function(){
+            scrollTo( $(this).attr('data-target') );
+        });
+
+        function showbranding() {
+          if($(window).width() < 768) {
+            if ($(this).scrollTop() > 60) {
+                $('#skipperbrand').fadeIn(500);
+            } else {
+                $('#skipperbrand').fadeOut(500);
+            }
+          } else {
+            $('#skipperbrand').css('display','none');
+          }
+        }
+
+        $('.navbar-toggle').click(function() {
+          if($(window).scrollTop() <= 60) {
+            if ( $('.navbar-collapse').attr('aria-expanded') === 'true' ) {
+              $('#skipperbrand').css('display','none');
+            } else {
+              $('#skipperbrand').css('display','block');
+            }
+          }
+        });
+
         $(document).ready(function () {
 
-          function scrollTo(selector){
-              myoffset = $('#wpadminbar').height() + $('.navbar-fixed-top').height();
-              console.log(myoffset);
-              $('html, body').animate({
-                  easing: 'easeInOutCubic',
-                  scrollTop: $(selector).offset().top - myoffset
-               }, 1600);
-          }
-
-          $('.sk-smoothscroll').click(function(){
-              scrollTo( $(this).attr('data-target') );
-          });
-
-          function showbranding() {
-            if($(window).width() < 768) {
-              if ($(this).scrollTop() > 60) {
-                  $('#skipperbrand').fadeIn(500);
-              } else {
-                  $('#skipperbrand').fadeOut(500);
-              }
-            } else {
-              $('#skipperbrand').css('display','none');
-            }
-          }
-
-          function footerlogoheight() {
-            logowidth = $('.footerlogo').width();
-            $('.footerlogo').height(logowidth*0.2);
-          }
-
           footerlogoheight();
-
-          $('.navbar-toggle').click(function() {
-            if($(window).scrollTop() <= 60) {
-              if ( $('.navbar-collapse').attr('aria-expanded') === 'true' ) {
-                $('#skipperbrand').css('display','none');
-              } else {
-                $('#skipperbrand').css('display','block');
-              }
-            }
-          });
 
           $(window).scroll(function(){
               showbranding();
