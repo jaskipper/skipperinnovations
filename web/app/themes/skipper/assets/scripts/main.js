@@ -61,8 +61,6 @@
 
         $(document).ready(function () {
 
-          footerlogoheight();
-
           $(window).scroll(function(){
               showbranding();
           });
@@ -139,6 +137,9 @@
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+
+        footerlogoheight();
+
       }
     },
     // Home
