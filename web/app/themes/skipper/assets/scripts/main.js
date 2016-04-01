@@ -55,12 +55,12 @@
           }
         });
 
-        $(document).ready(function () {
+        function footerlogoheight() {
+          logowidth = $('.footerlogo').width();
+          $('.footerlogo').height(logowidth*0.2);
+        }
 
-          function footerlogoheight() {
-            logowidth = $('.footerlogo').width();
-            $('.footerlogo').height(logowidth*0.2);
-          }
+        $(document).ready(function () {
 
           $(window).scroll(function(){
               showbranding();
@@ -70,8 +70,6 @@
               showbranding();
               footerlogoheight();
           });
-
-          footerlogoheight();
 
           //Social Feed
           var updateFeed = function() {
@@ -135,11 +133,14 @@
 
           $('[data-toggle="tooltip"]').tooltip();
 
+          footerlogoheight();
+
         }); //Document Load
 
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+
       }
     },
     // Home
