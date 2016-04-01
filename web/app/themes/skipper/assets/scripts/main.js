@@ -72,11 +72,11 @@
               //var queryTags = initialQuery.split(",");
               $('.social-feed-container').socialfeed({
                   // FACEBOOK
-                  facebook:{
+                  /*facebook:{
                       accounts: ['@skipperinnovations','!skipperinnovations'],  //Array: Specify a list of accounts from which to pull wall posts
                       limit: 5,                                   //Integer: max number of posts to load
                       access_token: '1709949575893557|00462da5d6e4c37442794ecea8d30843'  //String: "APP_ID|APP_SECRET"
-                  },
+                  },*/
                   // GOOGLEPLUS
                   /*google: {
                       accounts: queryTags,
