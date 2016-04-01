@@ -74,7 +74,7 @@ use Roots\Sage\Wrapper;
 
           <?php //dynamic_sidebar( 'sidebar-social' ); ?>
           <h2>Social Media</h2>
-          <div id="fp-social" class="social-feed-container"></div>
+          <div id="instafeed"></div>
           <!-- <div id="fpads">
             <h2>Sponsored Links</h2>
             <div id="fp-sponsored-links" >

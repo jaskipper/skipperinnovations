@@ -417,7 +417,7 @@ footer .nav>li>a:focus, footer .nav>li>a:hover {
     background-color: rgba($skipper-ultimate, .10);
   }
 }
-.grow {
+.grow, .attachment-thumbnail {
   -webkit-transition:all 0.5s ease-out;
   -moz-transition:all 0.5s ease-out;
   -ms-transition:all 0.5s ease-out;
@@ -425,7 +425,7 @@ footer .nav>li>a:focus, footer .nav>li>a:hover {
   transition:all 0.5s ease-out;
 }
 
-.grow:hover, .grow:focus, .grow:active {
+.grow:hover, .grow:focus, .grow:active, .attachment-thumbnail:hover {
   -webkit-transform:scale(1.1);
   -moz-transform:scale(1.1);
   -ms-transform:scale(1.1);

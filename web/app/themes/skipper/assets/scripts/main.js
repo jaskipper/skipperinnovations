@@ -71,59 +71,15 @@
               footerlogoheight();
           });
 
-          //Social Feed
-          var updateFeed = function() {
-              //var initialQuery = $('#query').val();
-              //initialQuery = initialQuery.replace(" ", "");
-              //var queryTags = initialQuery.split(",");
-              $('.social-feed-container').socialfeed({
-                  // FACEBOOK
-                  /*facebook:{
-                      accounts: ['@skipperinnovations','!skipperinnovations'],  //Array: Specify a list of accounts from which to pull wall posts
-                      limit: 5,                                   //Integer: max number of posts to load
-                      access_token: '1709949575893557|00462da5d6e4c37442794ecea8d30843'  //String: "APP_ID|APP_SECRET"
-                  },*/
-                  // GOOGLEPLUS
-                  /*google: {
-                      accounts: queryTags,
-                      limit: 2,
-                      access_token: 'AIzaSyDAelFmJhg6BSUbSLe8UT7s-G53tL4_KRg'
-                  },*/
-                  instagram: {
-                      accounts: ['@jasonaskipper'],
-                      limit: 5,
-                      client_id: '4add9e81cc964494bde97907372218cc',
-                      access_token: '36291383.1677ed0.bcf5591964a34a7a80072831c68b695e'
-                  },
-                  // TWITTER
-                  twitter:{
-                      accounts: ['@jasonaskipper'],                      //Array: Specify a list of accounts from which to pull tweets
-                      limit: 5,                                   //Integer: max number of tweets to load
-                      consumer_key: 'DfUEjfcnRDgQYxpwsN4Nhj47e',          //String: consumer key. make sure to have your app read-only
-                      consumer_secret: 'KYPHOaLP9i73vhCpM1FR48upO0o7rm2orCeCmkjZKmHUPHeKPo' //String: consumer secret key. make sure to have your app read-only
-                  },
-                  // VKONTAKTE
-                  /*vk: {
-                      accounts: queryTags,
-                      limit: 2,
-                      source: 'all'
-                  }, */
-                  // INSTAGRAM
+          //instafeed.js
 
+          var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'awesome',
+            clientId: '4add9e81cc964494bde97907372218cc'
+          });
+          feed.run();
 
-                  // GENERAL SETTINGS
-                  template: '/app/themes/skipper/templates/socialfeed-template.html', // a path to the template file
-                  length: 200,
-                  show_media: true,
-                  update_period: 60000,
-                  // When all the posts are collected and displayed - this function is evoked
-                  callback: function() {
-                      console.log('all posts are collected');
-                  }
-              });
-          };
-
-          updateFeed();
           $('#button-update').click(function() {
               //first, get rid of old data/posts.
               $('.social-feed-container').html('');

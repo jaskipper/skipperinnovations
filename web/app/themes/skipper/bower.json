@@ -12,12 +12,18 @@
     "social-sharing": "https://github.com/cferdinandi/social-sharing.git#~1.7.2",
     "animate.css": "~3.5.1",
     "jquery-number": "jquery-number#~2.1.6",
-    "social-feed": "~0.1.2"
+    "social-feed": "~0.1.2",
+    "instafeed.js": "^1.4.1"
   },
   "overrides": {
     "social-sharing": {
       "main": [
         "./src/sass/social-sharing.scss"
+      ]
+    },
+    "instafeed.js": {
+      "main": [
+        "./instafeed.js"
       ]
     },
     "social-feed": {
