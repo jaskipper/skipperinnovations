@@ -89,10 +89,16 @@
                       limit: 2,
                       access_token: 'AIzaSyDAelFmJhg6BSUbSLe8UT7s-G53tL4_KRg'
                   },*/
+                  instagram: {
+                      accounts: ['@jasonaskipper'],
+                      limit: 5,
+                      client_id: '4add9e81cc964494bde97907372218cc',
+                      access_token: '36291383.1677ed0.bcf5591964a34a7a80072831c68b695e'
+                  },
                   // TWITTER
                   twitter:{
                       accounts: ['@jasonaskipper'],                      //Array: Specify a list of accounts from which to pull tweets
-                      limit: 10,                                   //Integer: max number of tweets to load
+                      limit: 5,                                   //Integer: max number of tweets to load
                       consumer_key: 'DfUEjfcnRDgQYxpwsN4Nhj47e',          //String: consumer key. make sure to have your app read-only
                       consumer_secret: 'KYPHOaLP9i73vhCpM1FR48upO0o7rm2orCeCmkjZKmHUPHeKPo' //String: consumer secret key. make sure to have your app read-only
                   },
@@ -103,12 +109,7 @@
                       source: 'all'
                   }, */
                   // INSTAGRAM
-                  instagram: {
-                      accounts: ['@jasonaskipper'],
-                      limit: 5,
-                      client_id: '',
-                      access_token: '36291383.1677ed0.bcf5591964a34a7a80072831c68b695e'
-                  },
+
 
                   // GENERAL SETTINGS
                   template: '/app/themes/skipper/templates/socialfeed-template.html', // a path to the template file
