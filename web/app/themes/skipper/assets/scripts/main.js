@@ -133,9 +133,12 @@
 
           $('[data-toggle="tooltip"]').tooltip();
 
-          footerlogoheight();
-
         }); //Document Load
+
+        $(window).bind("load", function() {
+           // code here
+           footerlogoheight();
+        });
 
       },
       finalize: function() {

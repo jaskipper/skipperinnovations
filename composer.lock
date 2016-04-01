@@ -196,17 +196,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "28d86c613c6f334d8fbfe514cfe01d893d9f5d89"
+                "reference": "46a02c8fe837928b505bf9e95b61aa0c72885172"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/28d86c613c6f334d8fbfe514cfe01d893d9f5d89",
-                "reference": "28d86c613c6f334d8fbfe514cfe01d893d9f5d89",
+                "url": "https://api.github.com/repos/roots/soil/zipball/46a02c8fe837928b505bf9e95b61aa0c72885172",
+                "reference": "46a02c8fe837928b505bf9e95b61aa0c72885172",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0",
                 "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^2.5.1"
             },
             "type": "wordpress-plugin",
             "notification-url": "https://packagist.org/downloads/",
@@ -230,7 +233,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-01-21 02:48:35"
+            "time": "2016-03-12 19:19:19"
         },
         {
             "name": "vlucas/phpdotenv",
