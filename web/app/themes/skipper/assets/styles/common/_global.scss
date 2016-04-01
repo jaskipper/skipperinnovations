@@ -1,5 +1,15 @@
 body {
 }
+a {
+  -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
 h1 {
   font-size: 32px;
 }
@@ -149,7 +159,7 @@ article.type-post {
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 200px;
-  
+
   //Making Sure that we also target the iPhone 6 Plus
   @media screen and (max-device-width: 736px) and (orientation: landscape) {
     max-width: 65%;
