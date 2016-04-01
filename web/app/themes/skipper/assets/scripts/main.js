@@ -47,6 +47,13 @@
             }
           }
 
+          function footerlogoheight() {
+            logowidth = $('.footerlogo').width();
+            $('.footerlogo').height(logowidth*0.2);
+          }
+
+          footerlogoheight();
+
           $('.navbar-toggle').click(function() {
             if($(window).scrollTop() <= 60) {
               if ( $('.navbar-collapse').attr('aria-expanded') === 'true' ) {
@@ -63,6 +70,7 @@
 
           $(window).resize(function () {
               showbranding();
+              footerlogoheight();
           });
 
           //Social Feed

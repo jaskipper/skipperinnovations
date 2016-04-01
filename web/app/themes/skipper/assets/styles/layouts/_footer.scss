@@ -25,4 +25,15 @@ footer {
       text-align: center;
     }
   }
+  .no-svg .footerlogo {
+    background-image: url('../images/SkipperInnovationsWebDesign.png');
+  }
+  .footerlogo {
+      z-index:1;
+      width:100%;
+      box-sizing: border-box;
+      background-image: url('../images/SkipperInnovationsWebDesign.svg');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
 }
