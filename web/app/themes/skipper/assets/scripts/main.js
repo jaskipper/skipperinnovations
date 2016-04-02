@@ -132,9 +132,13 @@
           }
 
           function socialfeedheight() {
+            if ( $(window).width() > 500 ) {
               var fpblogheight = $('#fp-blog').height() + $('.fpreadblog').height();
               var fpadheight = $('#fpads').height();
               $('#instafeed').height(fpblogheight - fpadheight);
+            } else {
+              $('#instafeed').height(500);
+            }
           }
           socialfeedheight();
 
