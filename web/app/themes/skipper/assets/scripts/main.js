@@ -55,6 +55,12 @@
           }
         });
 
+        function instagramphotowidth() {
+          width = $(".instagramphoto .overlay").first().width();
+          $(".instlikes").css("line-height", width + "px");
+          $(".instcomments").css("line-height", width + "px");
+        }
+
         function footerlogoheight() {
           logowidth = $('.footerlogo').width();
           $('.footerlogo').height(logowidth*0.2);
@@ -66,11 +72,13 @@
 
           $(window).scroll(function(){
               showbranding();
+              instagramphotowidth();
           });
 
           $(window).resize(function () {
               showbranding();
               footerlogoheight();
+              instagramphotowidth();
           });
 
           //instafeed.js
@@ -80,7 +88,7 @@
             userId: '36291383',
             accessToken: '36291383.1677ed0.bcf5591964a34a7a80072831c68b695e',
             resolution: 'low_resolution',
-            template: '<div class="instagramphoto"><a href="{{link}}"><img data-toggle="tooltip" data-placement="left" title="{{caption}}" src="{{image}}" /></a></div>'
+            template: '<div class="instagramphoto"><a target="_blank" href="{{link}}" data-toggle="tooltip" data-placement="left" title="{{caption}}"><div class="overlay"><span class="instlikes"><i class="fa fa-heart"></i>{{likes}}</span><span class="instcomments"><i class="fa fa-comment"></i>{{comments}}</span></div></a><img src="{{image}}" /></div>'
           });
           feed.run();
 

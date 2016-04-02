@@ -417,7 +417,7 @@ footer .nav>li>a:focus, footer .nav>li>a:hover {
     background-color: rgba($skipper-ultimate, .10);
   }
 }
-.grow, .attachment-thumbnail {
+.grow, .attachment-thumbnail, .overlay {
   -webkit-transition:all 0.5s ease-out;
   -moz-transition:all 0.5s ease-out;
   -ms-transition:all 0.5s ease-out;
@@ -440,12 +440,46 @@ footer .nav>li>a:focus, footer .nav>li>a:hover {
   border-bottom: 1px solid #eee;
   width: 100%;
 }
-
+.instagramphoto:hover, .instagramphoto:active {
+  .overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 .instagramphoto {
   width: 50%;
   float: left;
-  padding: 5px;
+  position: relative;
+  .overlay {
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(#000, 0.6);
+    position: absolute;
+    top:5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    z-index: 10;
+    color: #fff;
+    i {
+      padding-right: 4px;
+    }
+    .instlikes {
+      width: 50%;
+      display: inline-block;
+      text-align: right;
+      padding-right: 5px;
+      line-height: 124px;
+    }
+    .instcomments {
+      width: 50%;
+      display: inline-block;
+      padding-left: 5px;
+      line-height: 124px;
+    }
+  }
   img {
     width: 100%;
+    padding: 5px;
   }
 }
