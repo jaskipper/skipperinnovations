@@ -68,7 +68,8 @@
 
         $(document).ready(function () {
 
-          $('[data-toggle="tooltip"]').tooltip();
+          //$('[data-toggle="tooltip"]').tooltip();
+          $("body").tooltip({ selector: '[data-toggle=tooltip]' });
 
           $(window).scroll(function(){
               showbranding();
@@ -88,7 +89,7 @@
             userId: '36291383',
             accessToken: '36291383.1677ed0.bcf5591964a34a7a80072831c68b695e',
             resolution: 'low_resolution',
-            template: '<div class="instagramphoto"><a target="_blank" href="{{link}}" data-toggle="tooltip" data-placement="left" title="{{caption}}"><div class="overlay"><span class="instlikes"><i class="fa fa-heart"></i>{{likes}}</span><span class="instcomments"><i class="fa fa-comment"></i>{{comments}}</span></div></a><img src="{{image}}" /></div>'
+            template: '<div class="instagramphoto" data-toggle="tooltip" title="{{caption}}"><a target="_blank" href="{{link}}"><div class="overlay"><span class="instlikes"><i class="fa fa-heart"></i>{{likes}}</span><span class="instcomments"><i class="fa fa-comment"></i>{{comments}}</span></div></a><img src="{{image}}" /></div>'
           });
           feed.run();
 
@@ -111,7 +112,6 @@
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
-
       }
     },
     // Home
