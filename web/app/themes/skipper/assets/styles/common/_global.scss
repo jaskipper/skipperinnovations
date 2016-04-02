@@ -432,3 +432,20 @@ footer .nav>li>a:focus, footer .nav>li>a:hover {
   -o-transform:scale(1.1);
   transform:scale(1.1);
 }
+
+#instafeed {
+  height: 500px;
+  overflow: scroll;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+.instagramphoto {
+  width: 50%;
+  float: left;
+  padding: 5px;
+  img {
+    width: 100%;
+  }
+}

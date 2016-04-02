@@ -62,6 +62,8 @@
 
         $(document).ready(function () {
 
+          $('[data-toggle="tooltip"]').tooltip();
+
           $(window).scroll(function(){
               showbranding();
           });
@@ -74,9 +76,11 @@
           //instafeed.js
 
           var feed = new Instafeed({
-            get: 'tagged',
-            tagName: 'awesome',
-            clientId: '4add9e81cc964494bde97907372218cc'
+            get: 'user',
+            userId: '36291383',
+            accessToken: '36291383.1677ed0.bcf5591964a34a7a80072831c68b695e',
+            resolution: 'low_resolution',
+            template: '<div class="instagramphoto"><a href="{{link}}"><img data-toggle="tooltip" data-placement="left" title="{{caption}}" src="{{image}}" /></a></div>'
           });
           feed.run();
 
@@ -88,7 +92,6 @@
               updateFeed();
           });
 
-          $('[data-toggle="tooltip"]').tooltip();
 
         }); //Document Load
 
@@ -123,7 +126,7 @@
           function socialfeedheight() {
               var fpblogheight = $('#fp-blog').height() + $('.fpreadblog').height();
               var fpadheight = $('#fpads').height();
-              $('.social-feed-container').height(fpblogheight - fpadheight);
+              $('#instafeed').height(fpblogheight - fpadheight);
           }
           socialfeedheight();
 

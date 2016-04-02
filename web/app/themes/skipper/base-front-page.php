@@ -49,14 +49,14 @@ use Roots\Sage\Wrapper;
 
     <section id="fp-social" class="">
       <div class="wrap container">
-        <div class="col-md-8 col-sm-6">
+        <div class="col-md-8 col-sm-8">
           <h2>Blog</h2>
           <div id="fp-blog">
             <?php
 
             // The Query
             $recentPosts = new WP_Query();
-            $recentPosts->query(array ('posts_per_page' => 4) );
+            $recentPosts->query(array ('posts_per_page' => 3) );
 
             while ($recentPosts -> have_posts()) : $recentPosts -> the_post(); ?>
               <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
@@ -70,25 +70,10 @@ use Roots\Sage\Wrapper;
           <a href="/skipperblog"><h3 class="fpreadblog"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Read more from the Blog...</h3></a>
         </div>
 
-        <div class="col-md-4 col-sm-6 socialwrap">
+        <div class="col-md-4 col-sm-4 socialwrap">
 
-          <?php //dynamic_sidebar( 'sidebar-social' ); ?>
-          <h2>Social Media</h2>
+          <h2>Jason's Instagram</h2>
           <div id="instafeed"></div>
-          <!-- <div id="fpads">
-            <h2>Sponsored Links</h2>
-            <div id="fp-sponsored-links" >
-              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <ins class="adsbygoogle"
-                   style="display:block"
-                   data-ad-client="ca-pub-8170675797595742"
-                   data-ad-slot="4889040857"
-                   data-ad-format="auto"></ins>
-              <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-          </div>
-          </div>-->
         </div>
       </div>
     </section>

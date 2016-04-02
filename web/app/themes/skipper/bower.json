@@ -12,7 +12,6 @@
     "social-sharing": "https://github.com/cferdinandi/social-sharing.git#~1.7.2",
     "animate.css": "~3.5.1",
     "jquery-number": "jquery-number#~2.1.6",
-    "social-feed": "~0.1.2",
     "instafeed.js": "^1.4.1"
   },
   "overrides": {
@@ -24,15 +23,6 @@
     "instafeed.js": {
       "main": [
         "./instafeed.js"
-      ]
-    },
-    "social-feed": {
-      "main": [
-        "./js/jquery.socialfeed.js",
-        "./css/jquery.socialfeed.css",
-        "../doT/doT.min.js",
-        "../codebird-js/codebird.js",
-        "../moment/min/moment.min.js"
       ]
     },
     "bootstrap-sass": {
