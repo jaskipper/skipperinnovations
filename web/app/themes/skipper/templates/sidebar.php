@@ -18,5 +18,5 @@
   (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
 </div>-->
-<h3 class="socialh3">Social Media</h3>
-<div id="fp-social" class="social-feed-container"></div>
+<h3>Jason's Instagram</h3>
+<div id="instafeed"></div>
