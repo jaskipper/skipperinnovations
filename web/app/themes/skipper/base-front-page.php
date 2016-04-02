@@ -18,7 +18,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <section id="landing" class="cover" style="background-image: url('<?php echo get_theme_mod('header_bg_image') ?>');">
+    <section id="landing" class="parallax-window" data-parallax="scroll" data-speed="0.2" data-image-src="<?php echo get_theme_mod('header_bg_image') ?>">
       <div id="skipperlogo" class="grow">
         <!--<a href="#" class="sk-smoothscroll" data-target="body"><img src="<?php echo get_header_image(); ?>" alt="Skipper Innovations Logo - Premium Web Design| Audio/Video/Lighting Solutions"></a>-->
       </div>
@@ -34,8 +34,7 @@ use Roots\Sage\Wrapper;
         <?php echo get_option('fp_description','Nothing') ?>
       </div>
     </section>
-
-    <section id="fp-widgets" class="cover">
+    <section id="fp-widgets" class="parallax-window" data-parallax="scroll" data-speed="0.6" data-image-src="/app/uploads/2015/01/skipperinnovations-mix-4-sm.jpg">
       <div id="fp-widgets-cover">
         <div class="container">
           <div class="row">

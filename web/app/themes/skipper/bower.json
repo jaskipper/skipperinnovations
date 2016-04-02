@@ -12,7 +12,8 @@
     "social-sharing": "https://github.com/cferdinandi/social-sharing.git#~1.7.2",
     "animate.css": "~3.5.1",
     "jquery-number": "jquery-number#~2.1.6",
-    "instafeed.js": "^1.4.1"
+    "instafeed.js": "^1.4.1",
+    "parallax.js": "^1.4.2"
   },
   "overrides": {
     "social-sharing": {
