@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fff438a808bc892d14a8c5c371f16913",
-    "content-hash": "8158f69ad6362c1978ed85b6fe64bb07",
+    "hash": "b01e65f1f0704d8cef4d0e39359496be",
+    "content-hash": "b5e05610d9971e60ff21cf351118205b",
     "packages": [
         {
             "name": "composer/installers",
@@ -292,7 +292,7 @@
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/all-in-one-seo-pack/",
+                "url": "https://plugins.svn.wordpress.org/all-in-one-seo-pack/",
                 "reference": "trunk"
             },
             "dist": {
@@ -313,7 +313,7 @@
             "version": "0.5.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/database-sync/",
+                "url": "https://plugins.svn.wordpress.org/database-sync/",
                 "reference": "tags/0.5.1"
             },
             "dist": {
@@ -333,7 +333,7 @@
             "version": "3.2.0",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/encrypt-email/",
+                "url": "https://plugins.svn.wordpress.org/encrypt-email/",
                 "reference": "trunk"
             },
             "dist": {
@@ -350,15 +350,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "2.5.9",
+            "version": "2.9.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/2.5.9"
+                "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
+                "reference": "tags/2.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.2.5.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.2.9.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -370,15 +370,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "2.9.33",
+            "version": "2.9.51",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/2.9.33"
+                "url": "https://plugins.svn.wordpress.org/ninja-forms/",
+                "reference": "tags/2.9.51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.33.zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.51.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -393,7 +393,7 @@
             "version": "1.6.0",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/page-scroll-to-id/",
+                "url": "https://plugins.svn.wordpress.org/page-scroll-to-id/",
                 "reference": "tags/1.6.0"
             },
             "dist": {
@@ -413,7 +413,7 @@
             "version": "4.9.9",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/shortcodes-ultimate/",
+                "url": "https://plugins.svn.wordpress.org/shortcodes-ultimate/",
                 "reference": "tags/4.9.9"
             },
             "dist": {
@@ -430,10 +430,10 @@
         },
         {
             "name": "wpackagist-plugin/simple-lightbox",
-            "version": "2.5.2",
+            "version": "2.5.3",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/simple-lightbox/",
+                "url": "https://plugins.svn.wordpress.org/simple-lightbox/",
                 "reference": "trunk"
             },
             "dist": {
@@ -450,15 +450,15 @@
         },
         {
             "name": "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags",
-            "version": "1.7",
+            "version": "1.7.3.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wonderm00ns-simple-facebook-open-graph-tags/",
-                "reference": "tags/1.7"
+                "url": "https://plugins.svn.wordpress.org/wonderm00ns-simple-facebook-open-graph-tags/",
+                "reference": "tags/1.7.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wonderm00ns-simple-facebook-open-graph-tags.1.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/wonderm00ns-simple-facebook-open-graph-tags.1.7.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -470,15 +470,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-retina-2x",
-            "version": "4.4.4",
+            "version": "4.5.5",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-retina-2x/",
-                "reference": "tags/4.4.4"
+                "url": "https://plugins.svn.wordpress.org/wp-retina-2x/",
+                "reference": "tags/4.5.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.4.4.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.4.5.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -487,6 +487,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-retina-2x/"
+        },
+        {
+            "name": "wpackagist-plugin/zero-spam",
+            "version": "2.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/zero-spam/",
+                "reference": "tags/2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.2.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/zero-spam/"
         }
     ],
     "packages-dev": [],

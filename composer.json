@@ -29,7 +29,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "https://wpackagist.org"
     }
   ],
   "require": {
@@ -47,7 +47,8 @@
     "roots/soil": "dev-trunk",
     "wpackagist-plugin/wp-retina-2x": ">=4.4.1",
     "wpackagist-plugin/page-scroll-to-id": "1.6.0",
-    "wpackagist-plugin/all-in-one-seo-pack": "dev-trunk"
+    "wpackagist-plugin/all-in-one-seo-pack": "dev-trunk",
+    "wpackagist-plugin/zero-spam": "2.1.1"
   },
   "extra": {
     "installer-paths": {
