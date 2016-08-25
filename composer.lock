@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b01e65f1f0704d8cef4d0e39359496be",
-    "content-hash": "b5e05610d9971e60ff21cf351118205b",
+    "hash": "f17bb504dca8709eae7c6334f0552c45",
+    "content-hash": "8c038b7cf2c75bf7a15293a1d19fc159",
     "packages": [
         {
             "name": "composer/installers",
@@ -109,16 +109,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.5.3",
+            "version": "4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715"
+                "reference": "1fb4b67e331d82f9061eaf3fcbc94163db85c135"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
-                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/1fb4b67e331d82f9061eaf3fcbc94163db85c135",
+                "reference": "1fb4b67e331d82f9061eaf3fcbc94163db85c135",
                 "shasum": ""
             },
             "require": {
@@ -142,7 +142,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-06-21 16:31:21"
+            "time": "2016-08-16 18:32:04"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -198,12 +198,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "79defa3c342a707f6e47d1c74fb829ede23b7555"
+                "reference": "d75bfe5cf072b1bc5753841e03eb9c522912f52e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/79defa3c342a707f6e47d1c74fb829ede23b7555",
-                "reference": "79defa3c342a707f6e47d1c74fb829ede23b7555",
+                "url": "https://api.github.com/repos/roots/soil/zipball/d75bfe5cf072b1bc5753841e03eb9c522912f52e",
+                "reference": "d75bfe5cf072b1bc5753841e03eb9c522912f52e",
                 "shasum": ""
             },
             "require": {
@@ -235,7 +235,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-06-14 21:21:13"
+            "time": "2016-08-18 02:14:15"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -289,15 +289,15 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-seo-pack",
-            "version": "dev-trunk",
+            "version": "2.3.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/all-in-one-seo-pack/",
-                "reference": "trunk"
+                "reference": "tags/2.3.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.zip",
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.3.9.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -305,8 +305,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/all-in-one-seo-pack/",
-            "time": "2016-02-24 19:41:51"
+            "homepage": "https://wordpress.org/plugins/all-in-one-seo-pack/"
         },
         {
             "name": "wpackagist-plugin/database-sync",
@@ -350,15 +349,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "2.9.1",
+            "version": "2.9.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/2.9.1"
+                "reference": "tags/2.9.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.2.9.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.2.9.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -370,15 +369,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "2.9.51",
+            "version": "2.9.56.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/2.9.51"
+                "reference": "tags/2.9.56.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.51.zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.56.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -513,8 +512,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "roots/soil": 20,
-        "wpackagist-plugin/all-in-one-seo-pack": 20
+        "roots/soil": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
