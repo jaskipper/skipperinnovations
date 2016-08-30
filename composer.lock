@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f17bb504dca8709eae7c6334f0552c45",
-    "content-hash": "8c038b7cf2c75bf7a15293a1d19fc159",
+    "hash": "f82305c11d6cb280fe540e1e6871f78c",
+    "content-hash": "effd80c949e1b3259f558aab6dff79dd",
     "packages": [
         {
             "name": "composer/installers",
@@ -308,6 +308,26 @@
             "homepage": "https://wordpress.org/plugins/all-in-one-seo-pack/"
         },
         {
+            "name": "wpackagist-plugin/bbpress",
+            "version": "2.5.10",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/bbpress/",
+                "reference": "tags/2.5.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/bbpress.2.5.10.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/bbpress/"
+        },
+        {
             "name": "wpackagist-plugin/database-sync",
             "version": "0.5.1",
             "source": {
@@ -406,6 +426,86 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/page-scroll-to-id/"
+        },
+        {
+            "name": "wpackagist-plugin/paid-memberships-pro",
+            "version": "1.8.10.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/paid-memberships-pro/",
+                "reference": "tags/1.8.10.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/paid-memberships-pro.1.8.10.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/paid-memberships-pro/"
+        },
+        {
+            "name": "wpackagist-plugin/pmpro-bbpress",
+            "version": "1.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/pmpro-bbpress/",
+                "reference": "tags/1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/pmpro-bbpress.1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/pmpro-bbpress/"
+        },
+        {
+            "name": "wpackagist-plugin/pmpro-email-templates-addon",
+            "version": "0.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/pmpro-email-templates-addon/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/pmpro-email-templates-addon.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/pmpro-email-templates-addon/"
+        },
+        {
+            "name": "wpackagist-plugin/pmpro-mailchimp",
+            "version": "2.0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/pmpro-mailchimp/",
+                "reference": "tags/2.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/pmpro-mailchimp.2.0.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/pmpro-mailchimp/"
         },
         {
             "name": "wpackagist-plugin/shortcodes-ultimate",

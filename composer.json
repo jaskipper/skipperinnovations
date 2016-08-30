@@ -48,7 +48,14 @@
     "wpackagist-plugin/wp-retina-2x": ">=4.4.1",
     "wpackagist-plugin/page-scroll-to-id": "1.6.0",
     "wpackagist-plugin/all-in-one-seo-pack": ">=2.3.9",
-    "wpackagist-plugin/zero-spam": "2.1.1"
+    "wpackagist-plugin/zero-spam": "2.1.1",
+    "wpackagist-plugin/paid-memberships-pro": "1.8.10.4",
+    "wpackagist-plugin/pmpro-bbpress": "1.5",
+    "wpackagist-plugin/pmpro-mailchimp": "2.0.3",
+    "wpackagist-plugin/pmpro-email-templates-addon": "0.7",
+    "wpackagist-plugin/bbpress": "2.5.10",
+    "wpackagist-plugin/hide-admin-bar-from-non-admins": "1.0",
+    
   },
   "extra": {
     "installer-paths": {
