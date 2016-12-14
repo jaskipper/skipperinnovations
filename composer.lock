@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c389086960ca57af465163c44df0525f",
-    "content-hash": "8c701de0616d9e26eb795bd18536bb00",
+    "hash": "4d2d4d5a0ce2a97450856b59ebcd4800",
+    "content-hash": "84dfa1d3d9521900be41151881a8fb8f",
     "packages": [
         {
             "name": "composer/installers",
@@ -109,16 +109,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.6.1",
+            "version": "4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3"
+                "reference": "b327faa6feea3a4058178dee7ac8b512bd957e92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
-                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/b327faa6feea3a4058178dee7ac8b512bd957e92",
+                "reference": "b327faa6feea3a4058178dee7ac8b512bd957e92",
                 "shasum": ""
             },
             "require": {
@@ -142,7 +142,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-09-07 15:01:47"
+            "time": "2016-12-06 18:46:46"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -288,46 +288,6 @@
             "time": "2016-09-01 10:05:43"
         },
         {
-            "name": "wpackagist-plugin/all-in-one-seo-pack",
-            "version": "2.3.11",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/all-in-one-seo-pack/",
-                "reference": "tags/2.3.11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.3.11.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/all-in-one-seo-pack/"
-        },
-        {
-            "name": "wpackagist-plugin/bbpress",
-            "version": "2.5.10",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/bbpress/",
-                "reference": "tags/2.5.10"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/bbpress.2.5.10.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/bbpress/"
-        },
-        {
             "name": "wpackagist-plugin/database-sync",
             "version": "0.5.1",
             "source": {
@@ -388,36 +348,16 @@
             "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/"
         },
         {
-            "name": "wpackagist-plugin/hide-admin-bar-from-non-admins",
-            "version": "1.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/hide-admin-bar-from-non-admins/",
-                "reference": "tags/1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/hide-admin-bar-from-non-admins.1.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/hide-admin-bar-from-non-admins/"
-        },
-        {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.0.16",
+            "version": "3.0.19",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "trunk"
+                "reference": "tags/3.0.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.19.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -446,86 +386,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/page-scroll-to-id/"
-        },
-        {
-            "name": "wpackagist-plugin/paid-memberships-pro",
-            "version": "1.8.10.4",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/paid-memberships-pro/",
-                "reference": "tags/1.8.10.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/paid-memberships-pro.1.8.10.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/paid-memberships-pro/"
-        },
-        {
-            "name": "wpackagist-plugin/pmpro-bbpress",
-            "version": "1.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/pmpro-bbpress/",
-                "reference": "tags/1.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/pmpro-bbpress.1.5.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/pmpro-bbpress/"
-        },
-        {
-            "name": "wpackagist-plugin/pmpro-email-templates-addon",
-            "version": "0.7",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/pmpro-email-templates-addon/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/pmpro-email-templates-addon.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/pmpro-email-templates-addon/"
-        },
-        {
-            "name": "wpackagist-plugin/pmpro-mailchimp",
-            "version": "2.0.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/pmpro-mailchimp/",
-                "reference": "tags/2.0.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/pmpro-mailchimp.2.0.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/pmpro-mailchimp/"
         },
         {
             "name": "wpackagist-plugin/shortcodes-ultimate",
@@ -568,16 +428,36 @@
             "homepage": "https://wordpress.org/plugins/simple-lightbox/"
         },
         {
-            "name": "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags",
-            "version": "2.0.5",
+            "name": "wpackagist-plugin/squirrly-seo",
+            "version": "6.2.5",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wonderm00ns-simple-facebook-open-graph-tags/",
-                "reference": "tags/2.0.5"
+                "url": "https://plugins.svn.wordpress.org/squirrly-seo/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wonderm00ns-simple-facebook-open-graph-tags.2.0.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/squirrly-seo.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/squirrly-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags",
+            "version": "2.0.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wonderm00ns-simple-facebook-open-graph-tags/",
+                "reference": "tags/2.0.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wonderm00ns-simple-facebook-open-graph-tags.2.0.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -589,15 +469,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-retina-2x",
-            "version": "4.6.0",
+            "version": "4.7.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-retina-2x/",
-                "reference": "tags/4.6.0"
+                "reference": "tags/4.7.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.4.6.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.4.7.5.zip",
                 "reference": null,
                 "shasum": null
             },
