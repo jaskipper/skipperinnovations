@@ -42,7 +42,6 @@ require_once PIWIK_INCLUDE_PATH . '/core/Plugin/MetadataLoader.php';
  * - **homepage**: The URL to the plugin's website.
  * - **authors**: A list of author arrays with keys for 'name', 'email' and 'homepage'
  * - **license**: The license the code uses (eg, GPL, MIT, etc.).
- * - **license_homepage**: URL to website describing the license used.
  * - **version**: The plugin version (eg, 1.0.1).
  * - **theme**: `true` or `false`. If `true`, the plugin will be treated as a theme.
  *
@@ -137,14 +136,19 @@ class Plugin
         if ($cache->contains($cacheId)) {
             $this->pluginInformation = $cache->fetch($cacheId);
         } else {
-            $metadataLoader = new MetadataLoader($pluginName);
-            $this->pluginInformation = $metadataLoader->load();
-
-            if ($this->hasDefinedPluginInformationInPluginClass() && $metadataLoader->hasPluginJson()) {
-                throw new \Exception('Plugin ' . $pluginName . ' has defined the method getInformation() and as well as having a plugin.json file. Please delete the getInformation() method from the plugin class. Alternatively, you may delete the plugin directory from plugins/' . $pluginName);
-            }
+            $this->reloadPluginInformation();
 
             $cache->save($cacheId, $this->pluginInformation);
+        }
+    }
+
+    public function reloadPluginInformation()
+    {
+        $metadataLoader = new MetadataLoader($this->pluginName);
+        $this->pluginInformation = $metadataLoader->load();
+
+        if ($this->hasDefinedPluginInformationInPluginClass() && $metadataLoader->hasPluginJson()) {
+            throw new \Exception('Plugin ' . $this->pluginName . ' has defined the method getInformation() and as well as having a plugin.json file. Please delete the getInformation() method from the plugin class. Alternatively, you may delete the plugin directory from plugins/' . $this->pluginName);
         }
     }
 
@@ -179,7 +183,6 @@ class Plugin
      * - 'author_homepage' => string    // author homepage URL (or email "mailto:youremail@example.org")
      * - 'homepage' => string           // plugin homepage URL
      * - 'license' => string            // plugin license
-     * - 'license_homepage' => string   // license homepage URL
      * - 'version' => string            // plugin version number; examples and 3rd party plugins must not use Version::VERSION; 3rd party plugins must increment the version number with each plugin release
      * - 'theme' => bool                // Whether this plugin is a theme (a theme is a plugin, but a plugin is not necessarily a theme)
      *

@@ -87,6 +87,7 @@ if (!defined('PIWIK_USER_PATH')) {
  * - **isPluginLoaded**: Returns true if the supplied plugin is loaded, false if otherwise.
  *                       `{% if isPluginLoaded('Goals') %}...{% endif %}`
  * - **areAdsForProfessionalServicesEnabled**: Returns true if it is ok to show some advertising in the UI for providers of Professional Support for Piwik (from Piwik 2.16.0)
+ * - **isMultiServerEnvironment**: Returns true if Piwik is used on more than one server (since Piwik 2.16.1)
  *
  * ### Examples
  *
@@ -116,6 +117,7 @@ class View implements ViewInterface
     protected $templateVars = array();
     private $contentType = 'text/html; charset=utf-8';
     private $xFrameOptions = null;
+    private $enableCacheBuster = true;
 
     /**
      * Constructor.
@@ -143,6 +145,14 @@ class View implements ViewInterface
         } catch (Exception $ex) {
             // pass (occurs when DB cannot be connected to, perhaps piwik URL cache should be stored in config file...)
         }
+    }
+
+    /**
+     * Disables the cache buster (adding of ?cb=...) to JavaScript and stylesheet files
+     */
+    public function disableCacheBuster()
+    {
+        $this->enableCacheBuster = false;
     }
 
     /**
@@ -228,6 +238,7 @@ class View implements ViewInterface
             $this->latest_version_available = UpdateCheck::isNewestVersionAvailable();
             $this->disableLink = Common::getRequestVar('disableLink', 0, 'int');
             $this->isWidget = Common::getRequestVar('widget', 0, 'int');
+            $this->isMultiServerEnvironment = SettingsPiwik::isMultiServerEnvironment();
 
             $piwikAds = StaticContainer::get('Piwik\ProfessionalServices\Advertising');
             $this->areAdsForProfessionalServicesEnabled = $piwikAds->areAdsForProfessionalServicesEnabled();
@@ -237,9 +248,8 @@ class View implements ViewInterface
             } else {
                 $cacheBuster = UIAssetCacheBuster::getInstance()->piwikVersionBasedCacheBuster();
             }
-
             $this->cacheBuster = $cacheBuster;
-            
+
             $this->loginModule = Piwik::getLoginPluginName();
 
             $user = APIUsersManager::getInstance()->getUser($this->userLogin);
@@ -260,6 +270,16 @@ class View implements ViewInterface
         return $this->renderTwigTemplate();
     }
 
+    /**
+     * @internal
+     * @ignore
+     * @return Twig_Environment
+     */
+    public function getTwig()
+    {
+        return $this->twig;
+    }
+
     protected function renderTwigTemplate()
     {
         try {
@@ -272,7 +292,9 @@ class View implements ViewInterface
             throw $ex;
         }
 
-        $output = $this->applyFilter_cacheBuster($output);
+        if ($this->enableCacheBuster) {
+            $output = $this->applyFilter_cacheBuster($output);
+        }
 
         $helper = new Theme;
         $output = $helper->rewriteAssetsPathToTheme($output);

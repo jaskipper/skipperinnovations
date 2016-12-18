@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Piwik\\Plugins\\' => array($baseDir . '/plugins'),
     'Piwik\\Network\\' => array($vendorDir . '/piwik/network/src'),
     'Piwik\\Ini\\' => array($vendorDir . '/piwik/ini/src'),
@@ -18,4 +19,5 @@ return array(
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'DeviceDetector\\' => array($vendorDir . '/piwik/device-detector'),
     'DI\\' => array($vendorDir . '/php-di/php-di/src/DI'),
+    'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
 );

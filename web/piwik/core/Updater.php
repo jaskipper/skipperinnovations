@@ -10,6 +10,7 @@ namespace Piwik;
 
 use Piwik\Columns\Updater as ColumnUpdater;
 use Piwik\Container\StaticContainer;
+use Piwik\Exception\MissingFilePermissionException;
 use Piwik\Updater\UpdateObserver;
 use Zend_Db_Exception;
 
@@ -80,14 +81,52 @@ class Updater
      *
      * @param string $name The component name. Eg, a plugin name, `'core'` or dimension column name.
      * @param string $version The component version (should use semantic versioning).
+     * @param bool   $isNew indicates if the component is a new one (for plugins)
      */
-    public function markComponentSuccessfullyUpdated($name, $version)
+    public function markComponentSuccessfullyUpdated($name, $version, $isNew = false)
     {
         try {
             Option::set(self::getNameInOptionTable($name), $version, $autoLoad = 1);
         } catch (\Exception $e) {
             // case when the option table is not yet created (before 0.2.10)
         }
+
+        if ($isNew) {
+
+            /**
+             * Event triggered after a new component has been installed.
+             *
+             * @param string $name The component that has been installed.
+             */
+            Piwik::postEvent('Updater.componentInstalled', array($name));
+
+            return;
+        }
+
+        /**
+         * Event triggered after a component has been updated.
+         *
+         * Can be used to handle logic that should be done after a component was updated
+         *
+         * **Example**
+         *
+         *     Piwik::addAction('Updater.componentUpdated', function ($componentName, $updatedVersion) {
+         *          $mail = new Mail();
+         *          $mail->setDefaultFromPiwik();
+         *          $mail->addTo('test@example.org');
+         *          $mail->setSubject('Component was updated);
+         *          $message = sprintf(
+         *              'Component %1$s has been updated to version %2$s',
+         *              $componentName, $updatedVersion
+         *          );
+         *          $mail->setBodyText($message);
+         *          $mail->send();
+         *     });
+         *
+         * @param string $componentName 'core', plugin name or dimension name
+         * @param string $updatedVersion version updated to
+         */
+        Piwik::postEvent('Updater.componentUpdated', array($name, $version));
     }
 
     /**
@@ -103,6 +142,13 @@ class Updater
         } catch (\Exception $e) {
             // case when the option table is not yet created (before 0.2.10)
         }
+
+        /**
+         * Event triggered after a component has been uninstalled.
+         *
+         * @param string $name The component that has been uninstalled.
+         */
+        Piwik::postEvent('Updater.componentUninstalled', array($name));
     }
 
     /**
@@ -257,8 +303,8 @@ class Updater
                 $this->markComponentSuccessfullyUpdated($componentName, $fileVersion);
             } catch (UpdaterErrorException $e) {
                 $this->executeListenerHook('onError', array($componentName, $fileVersion, $e));
-
                 throw $e;
+
             } catch (\Exception $e) {
                 $warningMessages[] = $e->getMessage();
 
@@ -552,7 +598,9 @@ class Updater
             // make sure to check for them here
             if ($e instanceof Zend_Db_Exception) {
                 throw new UpdaterErrorException($e->getMessage(), $e->getCode(), $e);
-            } else {
+            } else if ($e instanceof MissingFilePermissionException) {
+                throw new UpdaterErrorException($e->getMessage(), $e->getCode(), $e);
+            }{
                 throw $e;
             }
         }

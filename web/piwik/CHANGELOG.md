@@ -4,6 +4,15 @@ This is the Developer Changelog for Piwik platform developers. All changes in ou
 
 The Product Changelog at **[piwik.org/changelog](http://piwik.org/changelog)** lets you see more details about any Piwik release, such as the list of new guides and FAQs, security fixes, and links to all closed issues. 
 
+## Piwik 2.16.3
+
+### New APIs
+* The Piwik JavaScript tracker has a new method `trackRequest` that allows you to send any tracking parameters to Piwik. For example  `_paq.push(['trackRequest', 'te=foo&bar=baz'])`
+
+### Internal Changes
+* Expected screenshots for UI tests are now stored using Git LFS instead of a submodule. Running, creating or updating UI tests will require Git LFS to be installed.
+The folder containing expected screenshots was renamed from `expected-ui-screenshots` to `expected-screenshots`. The UI-Test-Runner is now able to handle both names.
+
 ## Piwik 2.16.2
 
 ### New APIs
@@ -39,6 +48,11 @@ The Product Changelog at **[piwik.org/changelog](http://piwik.org/changelog)** l
 ### Internal change
  * Tracking API: by default, when tracking a Page URL, Piwik will now remove the URL query string parameter `sid` if it is found. 
  * In the JavaScript tracker, the function `setDomains` will not anymore attempt to set a cookie path. Learn more about [configuring the tracker correctly](http://developer.piwik.org/guides/tracking-javascript-guide#tracking-one-domain) when tracking one or several domains and/or paths.
+
+## Piwik 2.16.1
+
+### Internal change
+ * The setting `[General]enable_marketplace=0/1` was removed, instead the new plugin Marketplace can be disabled/enabled. The updater should automatically migrate an existing setting.
 
 ## Piwik 2.16.0
 
