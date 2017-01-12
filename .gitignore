@@ -1,8 +1,8 @@
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
+!web/app/plugins/skipper*
 web/app/mu-plugins/*/
-!web/app/mu-plugins/skipper*/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
