@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2aee8a4de43aea5bee70910e2a4bc4a",
+    "content-hash": "82533a4c23fe63541134b883fb828e9d",
     "packages": [
         {
             "name": "composer/installers",
@@ -526,26 +526,6 @@
             "homepage": "https://wordpress.org/plugins/squirrly-seo/"
         },
         {
-            "name": "wpackagist-plugin/stripe",
-            "version": "1.6.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/stripe/",
-                "reference": "tags/1.6.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/stripe.1.6.0.zip",
-                "reference": "tags/1.6.0",
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/stripe/"
-        },
-        {
             "name": "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags",
             "version": "2.0.8.2",
             "source": {
@@ -564,6 +544,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wonderm00ns-simple-facebook-open-graph-tags/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-invoice",
+            "version": "4.1.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-invoice/",
+                "reference": "tags/4.1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-invoice.4.1.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-invoice/"
         },
         {
             "name": "wpackagist-plugin/wp-retina-2x",
